@@ -4,8 +4,8 @@ Integrate user-acquisition functions into your app.
 
 ##Build Sample Apps
 
-1. [Download the SDK](https://github.com/appsocially/AppSocially-iOS-SDK/releases) and unzip the file you downloaded. Sample app projects would be found in the "Examples" folder.
-2. Just build with Xcode!
+1. **[Download the SDK](https://github.com/appsocially/AppSocially-iOS-SDK/releases)** and unzip the file.
+2. **Build and Run!!** (Sample projects can be found in the "Examples" folder.)
 
 ##First Guides
 
@@ -18,7 +18,7 @@ Integrate user-acquisition functions into your app.
 The documentation can be found at the [wiki](https://github.com/appsocially/AppSocially-iOS-SDK/wiki).
 
 
-##Sample Apps
+##Samples and the related documents
 
 ###Invite Sample
 
