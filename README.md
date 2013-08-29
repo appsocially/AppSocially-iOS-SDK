@@ -9,13 +9,37 @@
 
 ###First Sample
 
+![FirstSample](http://appsocially-docs-resources.s3.amazonaws.com/ss_FirstSample__.png)
+
+- Related Documents:
+  - [How to install the SDK into your project](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/How-to-install-the-SDK-into-your-project)
+  - [1 line implement of invite functions](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/1-line-implement-of-invite-functions)
+
 ###Invite Sample
+
+![sample2](http://appsocially-docs-resources.s3.amazonaws.com/ss_InviteSmaple__.png)
+
+- Related Documents:
+  - [Aggregated friend picker](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Aggregated-friend-picker)
+  - [Bulk invitation](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Bulk-invitation)
+  - [Localization](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Localization)
 
 ###Share Sample
 
+![sample3](http://appsocially-docs-resources.s3.amazonaws.com/ss_ShareSample__.png)
+
+- Related Documents:
+  - [Trackable share functions](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Trackable-share-functions)
+  - [Aggregated share view](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Aggregated-share-view)
+  - [Trackable UIActivity](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Trackable-UIActivity)
+
 ###Customized View Sample
 
+![sample4](http://appsocially-docs-resources.s3.amazonaws.com/ss_CustomizedViewSample__.png)
 
+- Related Documents:
+  - [Custom View](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Custom-View)
+  
 ##Release Note
 
 ###0.7.0 (Aug. 27, 2013)
@@ -59,7 +83,7 @@
 - Removed `shareWithSenderName:contentURL:presetMessage:completion:` method from GRMailSharer
 
 
-**See also [AppSocially SDK 0.7.0 Transition Guide]()**
+**See also [AppSocially SDK 0.7.0 Transition Guide](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Transition-Guide-from-0.6.0-or-earlier-to-0.7.0)**
 
 
 ###0.6.0 (Aug. 14, 2013)
