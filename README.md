@@ -1,19 +1,24 @@
 #AppSocially SDK
 
-##Compatibility
+Integrate user-acquisition functions into your app.
 
-- iOS 5.0+
-- To use Facebook or Twitter related functions, iOS 6.0 or later is needed.
+##Build Sample Apps
 
-##Sample Projects
+1. [Download the SDK](https://github.com/appsocially/AppSocially-iOS-SDK/releases) and unzip the file you downloaded. Sample app projects would be found in the "Examples" folder.
+2. Just build with Xcode!
 
-###First Sample
+##First Guides
 
-![FirstSample](http://appsocially-docs-resources.s3.amazonaws.com/ss_FirstSample__.png)
+- [How to install the SDK into your project](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/How-to-install-the-SDK-into-your-project)
+- [1 line implement of invite functions](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/1-line-implement-of-invite-functions)
 
-- Related Documents:
-  - [How to install the SDK into your project](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/How-to-install-the-SDK-into-your-project)
-  - [1 line implement of invite functions](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/1-line-implement-of-invite-functions)
+
+##Other Documents
+
+The documentation can be found at the [wiki](https://github.com/appsocially/AppSocially-iOS-SDK/wiki).
+
+
+##Sample Apps
 
 ###Invite Sample
 
@@ -39,10 +44,15 @@
 
 - Related Documents:
   - [Custom View](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Custom-View)
-  
+
+##Compatibility
+
+- iOS 5.0+
+- To use Facebook or Twitter related functions, iOS 6.0 or later is needed.
+
 ##Release Note
 
-###0.7.0 (Aug. 27, 2013)
+###[0.7.0](https://github.com/appsocially/AppSocially-iOS-SDK/releases/tag/release-0.7.0) (Aug. 27, 2013)
 
 - New functions
   - Invite via LINE
