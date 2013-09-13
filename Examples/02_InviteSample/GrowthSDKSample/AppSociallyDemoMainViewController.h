@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GrowthDemoMainViewController : UIViewController
+@interface AppSociallyDemoMainViewController : UIViewController
 
 @end

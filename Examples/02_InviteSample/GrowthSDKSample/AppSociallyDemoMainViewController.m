@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 AppSocially Inc. All rights reserved.
 //
 
-#import "GrowthDemoMainViewController.h"
+#import "AppSociallyDemoMainViewController.h"
 #import <AppSocially/AppSocially.h>
 #import <QuartzCore/QuartzCore.h>
 #import "Utils.h"
@@ -16,7 +16,7 @@
 #define kSpecialColor [UIColor colorWithRed: 9.0/255.0 green:187./255.0 blue: 198./255.0 alpha:1.0]
 
 
-@interface GrowthDemoMainViewController ()
+@interface AppSociallyDemoMainViewController ()
 <ASFriendPickerViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (nonatomic, strong) NSArray *pickedFriends;
 @property (nonatomic, weak) IBOutlet UISwitch *addressbookSwitch;
@@ -28,7 +28,7 @@
 @end
 
 
-@implementation GrowthDemoMainViewController
+@implementation AppSociallyDemoMainViewController
 
 - (void)viewDidLoad {
     

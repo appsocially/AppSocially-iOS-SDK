@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="108"/>
         </scene>
-        <!--Growth Demo Main View Controller - Growth Demo-->
+        <!--App Socially Demo Main View Controller - AppSocially Demo-->
         <scene sceneID="HGh-D6-lSz">
             <objects>
-                <viewController id="YnG-jo-zcG" customClass="GrowthDemoMainViewController" sceneMemberID="viewController">
+                <viewController id="YnG-jo-zcG" customClass="AppSociallyDemoMainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nuL-NU-H5L">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -100,7 +100,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Growth Demo" id="gAa-wE-Pdg"/>
+                    <navigationItem key="navigationItem" title="AppSocially Demo" id="gAa-wE-Pdg"/>
                     <connections>
                         <outlet property="addressbookSwitch" destination="buA-Bl-DmY" id="3WE-80-cQp"/>
                         <outlet property="bulkSwitch" destination="CQo-eJ-7EX" id="vTy-dm-9R5"/>
@@ -116,8 +116,8 @@
         </scene>
     </scenes>
     <classes>
-        <class className="GrowthDemoMainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GrowthDemoMainViewController.h"/>
+        <class className="AppSociallyDemoMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AppSociallyDemoMainViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="addressbookSwitch" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="bulkSwitch" candidateClass="UISwitch"/>

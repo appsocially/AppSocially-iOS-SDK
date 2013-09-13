@@ -18,8 +18,8 @@
 		85B447BD1728BC1100D584DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B447BC1728BC1100D584DA /* QuartzCore.framework */; };
 		8A15B90217666A390046E3CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A15B8F317666A390046E3CC /* InfoPlist.strings */; };
 		8A15B90317666A390046E3CC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A15B8F517666A390046E3CC /* MainStoryboard.storyboard */; };
-		8A15B90417666A390046E3CC /* GrowthDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15B8F817666A390046E3CC /* GrowthDemoAppDelegate.m */; };
-		8A15B90517666A390046E3CC /* GrowthDemoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15B8FA17666A390046E3CC /* GrowthDemoMainViewController.m */; };
+		8A15B90417666A390046E3CC /* AppSociallyDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15B8F817666A390046E3CC /* AppSociallyDemoAppDelegate.m */; };
+		8A15B90517666A390046E3CC /* AppSociallyDemoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15B8FA17666A390046E3CC /* AppSociallyDemoMainViewController.m */; };
 		8A15B90617666A390046E3CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15B8FB17666A390046E3CC /* main.m */; };
 		8A15B90D17666AE90046E3CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A15B90A17666AE90046E3CC /* Default-568h@2x.png */; };
 		8A15B90E17666AE90046E3CC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A15B90B17666AE90046E3CC /* Default.png */; };
@@ -52,14 +52,14 @@
 		85B447A81728B61700D584DA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Accounts.framework; sourceTree = DEVELOPER_DIR; };
 		85B447AA1728B62800D584DA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Social.framework; sourceTree = DEVELOPER_DIR; };
 		85B447BC1728BC1100D584DA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		8A15B8F117666A390046E3CC /* CameraSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CameraSample-Info.plist"; sourceTree = "<group>"; };
-		8A15B8F217666A390046E3CC /* CameraSample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CameraSample-Prefix.pch"; sourceTree = "<group>"; };
+		8A15B8F117666A390046E3CC /* InviteSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "InviteSample-Info.plist"; sourceTree = "<group>"; };
+		8A15B8F217666A390046E3CC /* InviteSample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InviteSample-Prefix.pch"; sourceTree = "<group>"; };
 		8A15B8F417666A390046E3CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A15B8F617666A390046E3CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		8A15B8F717666A390046E3CC /* GrowthDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowthDemoAppDelegate.h; sourceTree = "<group>"; };
-		8A15B8F817666A390046E3CC /* GrowthDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowthDemoAppDelegate.m; sourceTree = "<group>"; };
-		8A15B8F917666A390046E3CC /* GrowthDemoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowthDemoMainViewController.h; sourceTree = "<group>"; };
-		8A15B8FA17666A390046E3CC /* GrowthDemoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowthDemoMainViewController.m; sourceTree = "<group>"; };
+		8A15B8F717666A390046E3CC /* AppSociallyDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSociallyDemoAppDelegate.h; sourceTree = "<group>"; };
+		8A15B8F817666A390046E3CC /* AppSociallyDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSociallyDemoAppDelegate.m; sourceTree = "<group>"; };
+		8A15B8F917666A390046E3CC /* AppSociallyDemoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSociallyDemoMainViewController.h; sourceTree = "<group>"; };
+		8A15B8FA17666A390046E3CC /* AppSociallyDemoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSociallyDemoMainViewController.m; sourceTree = "<group>"; };
 		8A15B8FB17666A390046E3CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8A15B90A17666AE90046E3CC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		8A15B90B17666AE90046E3CC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 			children = (
 				8A2DA8B6178A48290078121B /* Vendor */,
 				8A15B91017666B020046E3CC /* Resources */,
-				8A15B8EC17666A390046E3CC /* GrowthSDKSample */,
+				8A15B8EC17666A390046E3CC /* AppSociallySDKSample */,
 				8A15B90817666A490046E3CC /* Supporting Files */,
 				85B4416117288A2800D584DA /* Frameworks */,
 				85B4416017288A2800D584DA /* Products */,
@@ -156,23 +156,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8A15B8EC17666A390046E3CC /* GrowthSDKSample */ = {
+		8A15B8EC17666A390046E3CC /* AppSociallySDKSample */ = {
 			isa = PBXGroup;
 			children = (
-				8A15B8F717666A390046E3CC /* GrowthDemoAppDelegate.h */,
-				8A15B8F817666A390046E3CC /* GrowthDemoAppDelegate.m */,
-				8A15B8F917666A390046E3CC /* GrowthDemoMainViewController.h */,
-				8A15B8FA17666A390046E3CC /* GrowthDemoMainViewController.m */,
+				8A15B8F717666A390046E3CC /* AppSociallyDemoAppDelegate.h */,
+				8A15B8F817666A390046E3CC /* AppSociallyDemoAppDelegate.m */,
+				8A15B8F917666A390046E3CC /* AppSociallyDemoMainViewController.h */,
+				8A15B8FA17666A390046E3CC /* AppSociallyDemoMainViewController.m */,
 				8A15B8F517666A390046E3CC /* MainStoryboard.storyboard */,
 			);
+			name = AppSociallySDKSample;
 			path = GrowthSDKSample;
 			sourceTree = "<group>";
 		};
 		8A15B90817666A490046E3CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8A15B8F117666A390046E3CC /* CameraSample-Info.plist */,
-				8A15B8F217666A390046E3CC /* CameraSample-Prefix.pch */,
+				8A15B8F117666A390046E3CC /* InviteSample-Info.plist */,
+				8A15B8F217666A390046E3CC /* InviteSample-Prefix.pch */,
 				8A15B8F317666A390046E3CC /* InfoPlist.strings */,
 				8A15B8FB17666A390046E3CC /* main.m */,
 			);
@@ -225,9 +226,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		85B4415E17288A2800D584DA /* CameraSampleDemo */ = {
+		85B4415E17288A2800D584DA /* InviteSampleDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85B4418617288A2800D584DA /* Build configuration list for PBXNativeTarget "CameraSampleDemo" */;
+			buildConfigurationList = 85B4418617288A2800D584DA /* Build configuration list for PBXNativeTarget "InviteSampleDemo" */;
 			buildPhases = (
 				85B4415D17288A2800D584DA /* Resources */,
 				85B4415B17288A2800D584DA /* Sources */,
@@ -237,7 +238,7 @@
 			);
 			dependencies = (
 			);
-			name = CameraSampleDemo;
+			name = InviteSampleDemo;
 			productName = DemoApp;
 			productReference = 85B4415F17288A2800D584DA /* GrowthCam.app */;
 			productType = "com.apple.product-type.application";
@@ -252,7 +253,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "AppSocially Inc.";
 			};
-			buildConfigurationList = 85B4411D1728891500D584DA /* Build configuration list for PBXProject "CameraSample" */;
+			buildConfigurationList = 85B4411D1728891500D584DA /* Build configuration list for PBXProject "InviteSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -267,7 +268,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				85B4415E17288A2800D584DA /* CameraSampleDemo */,
+				85B4415E17288A2800D584DA /* InviteSampleDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -298,8 +299,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A15B90417666A390046E3CC /* GrowthDemoAppDelegate.m in Sources */,
-				8A15B90517666A390046E3CC /* GrowthDemoMainViewController.m in Sources */,
+				8A15B90417666A390046E3CC /* AppSociallyDemoAppDelegate.m in Sources */,
+				8A15B90517666A390046E3CC /* AppSociallyDemoMainViewController.m in Sources */,
 				8A15B90617666A390046E3CC /* main.m in Sources */,
 				8A2DA8BA178A482A0078121B /* Utils.m in Sources */,
 			);
@@ -378,7 +379,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GrowthSDKSample/CameraSample-Prefix.pch";
+				GCC_PREFIX_HEADER = "GrowthSDKSample/InviteSample-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -388,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "GrowthSDKSample/CameraSample-Info.plist";
+				INFOPLIST_FILE = "GrowthSDKSample/InviteSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;
@@ -425,12 +426,12 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GrowthSDKSample/CameraSample-Prefix.pch";
+				GCC_PREFIX_HEADER = "GrowthSDKSample/InviteSample-Prefix.pch";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "GrowthSDKSample/CameraSample-Info.plist";
+				INFOPLIST_FILE = "GrowthSDKSample/InviteSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;
@@ -479,12 +480,12 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GrowthSDKSample/CameraSample-Prefix.pch";
+				GCC_PREFIX_HEADER = "GrowthSDKSample/InviteSample-Prefix.pch";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "GrowthSDKSample/CameraSample-Info.plist";
+				INFOPLIST_FILE = "GrowthSDKSample/InviteSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;
@@ -507,7 +508,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		85B4411D1728891500D584DA /* Build configuration list for PBXProject "CameraSample" */ = {
+		85B4411D1728891500D584DA /* Build configuration list for PBXProject "InviteSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85B4411E1728891500D584DA /* Debug */,
@@ -517,7 +518,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85B4418617288A2800D584DA /* Build configuration list for PBXNativeTarget "CameraSampleDemo" */ = {
+		85B4418617288A2800D584DA /* Build configuration list for PBXNativeTarget "InviteSampleDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85B4418717288A2800D584DA /* Debug */,

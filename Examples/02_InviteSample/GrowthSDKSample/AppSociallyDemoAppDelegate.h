@@ -1,5 +1,5 @@
 //
-//  GrowthDemoAppDelegate.h
+//  AppSociallyDemoAppDelegate.h
 //  GrowthSDKSample
 //
 //  Created by Shuichi Tsutsumi.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GrowthDemoAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppSociallyDemoAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
