@@ -52,6 +52,11 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
 
 ##Release Note
 
+###0.7.2 (Sep. 12, 2013)
+
+- iOS7 suport
+- Bug fixes
+
 ###0.7.1 (Sep. 2, 2013)
 
 - Fixed a bug for the invite function via Email.
