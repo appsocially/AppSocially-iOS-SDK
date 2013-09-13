@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="108"/>
         </scene>
-        <!--App Socially Demo Main View Controller - GrowthDemo-->
+        <!--App Socially Demo Main View Controller - AppSocially Demo-->
         <scene sceneID="HGh-D6-lSz">
             <objects>
                 <viewController id="YnG-jo-zcG" customClass="AppSociallyDemoMainViewController" sceneMemberID="viewController">
@@ -38,7 +38,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="GrowthDemo" id="gAa-wE-Pdg"/>
+                    <navigationItem key="navigationItem" title="AppSocially Demo" id="gAa-wE-Pdg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nho-1C-A9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
