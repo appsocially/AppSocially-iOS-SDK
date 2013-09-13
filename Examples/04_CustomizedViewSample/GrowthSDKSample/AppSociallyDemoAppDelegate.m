@@ -43,10 +43,13 @@
                                        forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setTitleTextAttributes:attributes];
     
-    [[UIBarButtonItem appearance] setTintColor:[UIColor colorWithRed:0.
-                                                               green:209.0/255.0
-                                                                blue:218.0/255.0
-                                                               alpha:1.0]];
+    NSString *version = [[UIDevice currentDevice] systemVersion];
+    if (version.floatValue < 7.0) {
+        [[UIBarButtonItem appearance] setTintColor:[UIColor colorWithRed:0.
+                                                                   green:209.0/255.0
+                                                                    blue:218.0/255.0
+                                                                   alpha:1.0]];
+    }
     
     return YES;
 }

@@ -46,6 +46,7 @@
 						<reference key="NSNextKeyView" ref="684255069"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<int key="IBUIBarStyle">2</int>
 						<array key="IBUIItems">
 							<object class="IBUINavigationItem" id="455726122">
 								<reference key="IBUINavigationBar" ref="940557658"/>
@@ -61,7 +62,6 @@
 						<string key="NSFrame">{{98, 254}, {124, 40}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
