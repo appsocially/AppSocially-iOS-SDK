@@ -1,12 +1,12 @@
 //
-//  GrowthSDKMainViewController.m
-//  GrowthSDKSample
+//  AppSociallySDKMainViewController.m
+//  AppSociallySDKSample
 //
 //  Created by Shuichi Tsutsumi.
 //  Copyright (c) 2013 AppSocially Inc. All rights reserved.
 //
 
-#import "GrowthDemoMainViewController.h"
+#import "AppSociallyDemoMainViewController.h"
 #import <AppSocially/AppSocially.h>
 #import <QuartzCore/QuartzCore.h>
 #import "Utils.h"
@@ -18,7 +18,7 @@
 #define kImageURL @"https://sphotos-b-pao.xx.fbcdn.net/hphotos-ash4/1004691_1405060609714824_1759329629_n.jpg"
 
 
-@interface GrowthDemoMainViewController ()
+@interface AppSociallyDemoMainViewController ()
 <UIActionSheetDelegate>
 @property (nonatomic, weak) IBOutlet UIButton *showShareComposeViewBtn;
 @property (nonatomic, weak) IBOutlet UIButton *chooseOnWhatBtn;
@@ -26,7 +26,7 @@
 @end
 
 
-@implementation GrowthDemoMainViewController
+@implementation AppSociallyDemoMainViewController
 
 - (void)viewDidLoad {
     

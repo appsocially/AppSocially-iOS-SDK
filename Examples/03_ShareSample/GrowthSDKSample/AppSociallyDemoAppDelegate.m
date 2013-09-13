@@ -1,17 +1,17 @@
 //
-//  GrowthDemoAppDelegate.m
-//  GrowthSDKSample
+//  AppSociallyDemoAppDelegate.m
+//  AppSociallySDKSample
 //
 //  Created by Shuichi Tsutsumi.
 //  Copyright (c) 2013 AppSocially Inc. All rights reserved.
 //
 
-#import "GrowthDemoAppDelegate.h"
+#import "AppSociallyDemoAppDelegate.h"
 #import <AppSocially/AppSocially.h>
 #import "Utils.h"
 
 
-@implementation GrowthDemoAppDelegate
+@implementation AppSociallyDemoAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
