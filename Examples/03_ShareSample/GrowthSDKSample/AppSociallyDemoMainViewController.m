@@ -186,10 +186,9 @@
     UIColor *cancelBtnColor = [UIColor colorWithRed:238./255. green:242./255. blue:234./255. alpha:1.0];
     UIImage *cancelBtnColorImage = [Utils drawImageOfSize:CGSizeMake(1, 1)
                                                  andColor:cancelBtnColor];
-    [cancelBtn setBackgroundImage:cancelBtnColorImage
-                         forState:UIControlStateNormal
-                            style:UIBarButtonItemStyleBordered
-                       barMetrics:UIBarMetricsDefault];
+    
+    NSString *version = [[UIDevice currentDevice] systemVersion];
+
     NSDictionary *attr = @{
                            UITextAttributeTextColor: [UIColor grayColor],
                            UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 0.0f)]};
@@ -199,13 +198,29 @@
     UIBarButtonItem *sendBtn = [[UIBarButtonItem alloc] initWithTitle:@"Send"
                                                                 style:UIBarButtonItemStyleBordered
                                                                target:nil action:nil];
-    [sendBtn setTintColor:kBtnColor];
     NSDictionary *sendBtnTextAttr = @{
                                       UITextAttributeTextColor: [UIColor whiteColor],
                                       UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 0.0f)],
                                       };
     [sendBtn setTitleTextAttributes:sendBtnTextAttr forState:UIControlStateNormal];
     
+    if (version.floatValue < 7.0) {
+
+        [cancelBtn setBackgroundImage:cancelBtnColorImage
+                             forState:UIControlStateNormal
+                                style:UIBarButtonItemStyleBordered
+                           barMetrics:UIBarMetricsDefault];
+        
+        [sendBtn setTintColor:kBtnColor];
+    }
+    else {
+        
+        attr = @{
+                 UITextAttributeTextColor: [UIColor blackColor],
+                 UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 0.0f)]};
+        
+        [sendBtn setTitleTextAttributes:attr forState:UIControlStateNormal];
+    }
     
     ASShareComposeViewController *shareCtr = [[ASShareComposeViewController alloc] init];
     shareCtr.backBtn = cancelBtn;
