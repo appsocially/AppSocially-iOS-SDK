@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="jSo-xu-oe1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="jSo-xu-oe1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="108"/>
         </scene>
-        <!--Growth Demo Main View Controller - GrowthDemo-->
+        <!--App Socially Demo Main View Controller - GrowthDemo-->
         <scene sceneID="HGh-D6-lSz">
             <objects>
-                <viewController id="YnG-jo-zcG" customClass="GrowthDemoMainViewController" sceneMemberID="viewController">
+                <viewController id="YnG-jo-zcG" customClass="AppSociallyDemoMainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nuL-NU-H5L">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -46,8 +46,8 @@
         </scene>
     </scenes>
     <classes>
-        <class className="GrowthDemoMainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GrowthDemoMainViewController.h"/>
+        <class className="AppSociallyDemoMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AppSociallyDemoMainViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

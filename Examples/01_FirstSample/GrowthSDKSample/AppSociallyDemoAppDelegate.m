@@ -1,16 +1,16 @@
 //
-//  GrowthDemoAppDelegate.m
-//  GrowthSDKSample
+//  AppSociallyDemoAppDelegate.m
+//  AppSociallySDKSample
 //
 //  Created by Shuichi Tsutsumi.
 //  Copyright (c) 2013 AppSocially Inc. All rights reserved.
 //
 
-#import "GrowthDemoAppDelegate.h"
+#import "AppSociallyDemoAppDelegate.h"
 #import <AppSocially/AppSocially.h>
 
 
-@implementation GrowthDemoAppDelegate
+@implementation AppSociallyDemoAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
@@ -29,12 +29,10 @@
                                        forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setTitleTextAttributes:attributes];
     
-    [[UIBarButtonItem appearance] setTintColor:[UIColor colorWithWhite:0.9 alpha:1.0]];
-    [[UIBarButtonItem appearance] setTitleTextAttributes: @{
-                                UITextAttributeTextColor: [UIColor darkGrayColor],
-                         UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 0.0f)],
-     }
-                                                forState:UIControlStateNormal];
+    NSString *version = [[UIDevice currentDevice] systemVersion];
+    if (version.floatValue < 7.0) {
+        [[UIBarButtonItem appearance] setTintColor:[UIColor colorWithWhite:0.9 alpha:1.0]];
+    }
     
     return YES;
 }
