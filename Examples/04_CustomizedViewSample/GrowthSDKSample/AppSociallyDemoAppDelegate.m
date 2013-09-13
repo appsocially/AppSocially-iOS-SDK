@@ -1,19 +1,19 @@
 //
-//  GrowthDemoAppDelegate.m
-//  GrowthSDKSample
+//  AppSociallyDemoAppDelegate.m
+//  AppSociallySDKSample
 //
 //  Created by Shuichi Tsutsumi.
 //  Copyright (c) 2013 AppSocially Inc. All rights reserved.
 //
 
-#import "GrowthDemoAppDelegate.h"
+#import "AppSociallyDemoAppDelegate.h"
 #import <AppSocially/AppSocially.h>
 #import "IIViewDeckController.h"
-#import "GrowthDemoMainViewController.h"
+#import "AppSociallyDemoMainViewController.h"
 #import "InviteTableViewController.h"
 
 
-@implementation GrowthDemoAppDelegate
+@implementation AppSociallyDemoAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
@@ -23,7 +23,7 @@
 
     
     // slide menu setup
-    GrowthDemoMainViewController *mainCtr = [[GrowthDemoMainViewController alloc] init];
+    AppSociallyDemoMainViewController *mainCtr = [[AppSociallyDemoMainViewController alloc] init];
     InviteTableViewController *inviteCtr = [[InviteTableViewController alloc] init];
     
     IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:mainCtr
@@ -47,11 +47,6 @@
                                                                green:209.0/255.0
                                                                 blue:218.0/255.0
                                                                alpha:1.0]];
-    [[UIBarButtonItem appearance] setTitleTextAttributes: @{
-                                UITextAttributeTextColor: [UIColor whiteColor],
-                         UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 0.0f)],
-     }
-                                                forState:UIControlStateNormal];
     
     return YES;
 }

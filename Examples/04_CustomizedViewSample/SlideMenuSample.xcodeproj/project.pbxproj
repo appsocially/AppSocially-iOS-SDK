@@ -17,8 +17,8 @@
 		85B447AB1728B62800D584DA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B447AA1728B62800D584DA /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		85B447BD1728BC1100D584DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B447BC1728BC1100D584DA /* QuartzCore.framework */; };
 		8A15B90217666A390046E3CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A15B8F317666A390046E3CC /* InfoPlist.strings */; };
-		8A15B90417666A390046E3CC /* GrowthDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15B8F817666A390046E3CC /* GrowthDemoAppDelegate.m */; };
-		8A15B90517666A390046E3CC /* GrowthDemoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15B8FA17666A390046E3CC /* GrowthDemoMainViewController.m */; };
+		8A15B90417666A390046E3CC /* AppSociallyDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15B8F817666A390046E3CC /* AppSociallyDemoAppDelegate.m */; };
+		8A15B90517666A390046E3CC /* AppSociallyDemoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15B8FA17666A390046E3CC /* AppSociallyDemoMainViewController.m */; };
 		8A15B90617666A390046E3CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15B8FB17666A390046E3CC /* main.m */; };
 		8A15B90D17666AE90046E3CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A15B90A17666AE90046E3CC /* Default-568h@2x.png */; };
 		8A15B90E17666AE90046E3CC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A15B90B17666AE90046E3CC /* Default.png */; };
@@ -29,7 +29,7 @@
 		8A8073F7176787EB0053209C /* InviteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8073F5176787EB0053209C /* InviteTableViewController.m */; };
 		8A8073F8176787EB0053209C /* InviteTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A8073F6176787EB0053209C /* InviteTableViewController.xib */; };
 		8A8073FB1767895B0053209C /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8073F9176789150053209C /* libiconv.dylib */; };
-		8A8073FD17678C8A0053209C /* GrowthDemoMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A8073FC17678C8A0053209C /* GrowthDemoMainViewController.xib */; };
+		8A8073FD17678C8A0053209C /* AppSociallyDemoMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A8073FC17678C8A0053209C /* AppSociallyDemoMainViewController.xib */; };
 		8A8073FF176796B70053209C /* BarColor2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A8073FE176796B70053209C /* BarColor2.png */; };
 		8A807401176797C60053209C /* people2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A807400176797C60053209C /* people2@2x.png */; };
 		8A80740417679E3F0053209C /* InviteTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A80740317679E3F0053209C /* InviteTableCell.m */; };
@@ -62,10 +62,10 @@
 		8A15B8F117666A390046E3CC /* SlideMenuSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SlideMenuSample-Info.plist"; sourceTree = "<group>"; };
 		8A15B8F217666A390046E3CC /* SlideMenuSample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SlideMenuSample-Prefix.pch"; sourceTree = "<group>"; };
 		8A15B8F417666A390046E3CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8A15B8F717666A390046E3CC /* GrowthDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowthDemoAppDelegate.h; sourceTree = "<group>"; };
-		8A15B8F817666A390046E3CC /* GrowthDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowthDemoAppDelegate.m; sourceTree = "<group>"; };
-		8A15B8F917666A390046E3CC /* GrowthDemoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowthDemoMainViewController.h; sourceTree = "<group>"; };
-		8A15B8FA17666A390046E3CC /* GrowthDemoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowthDemoMainViewController.m; sourceTree = "<group>"; };
+		8A15B8F717666A390046E3CC /* AppSociallyDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSociallyDemoAppDelegate.h; sourceTree = "<group>"; };
+		8A15B8F817666A390046E3CC /* AppSociallyDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSociallyDemoAppDelegate.m; sourceTree = "<group>"; };
+		8A15B8F917666A390046E3CC /* AppSociallyDemoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSociallyDemoMainViewController.h; sourceTree = "<group>"; };
+		8A15B8FA17666A390046E3CC /* AppSociallyDemoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSociallyDemoMainViewController.m; sourceTree = "<group>"; };
 		8A15B8FB17666A390046E3CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8A15B90A17666AE90046E3CC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		8A15B90B17666AE90046E3CC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		8A8073F5176787EB0053209C /* InviteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InviteTableViewController.m; sourceTree = "<group>"; };
 		8A8073F6176787EB0053209C /* InviteTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InviteTableViewController.xib; sourceTree = "<group>"; };
 		8A8073F9176789150053209C /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
-		8A8073FC17678C8A0053209C /* GrowthDemoMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrowthDemoMainViewController.xib; sourceTree = "<group>"; };
+		8A8073FC17678C8A0053209C /* AppSociallyDemoMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppSociallyDemoMainViewController.xib; sourceTree = "<group>"; };
 		8A8073FE176796B70053209C /* BarColor2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BarColor2.png; sourceTree = "<group>"; };
 		8A807400176797C60053209C /* people2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "people2@2x.png"; sourceTree = "<group>"; };
 		8A80740217679E3F0053209C /* InviteTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InviteTableCell.h; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				8A15B91017666B020046E3CC /* Resources */,
-				8A15B8EC17666A390046E3CC /* GrowthSDKSample */,
+				8A15B8EC17666A390046E3CC /* AppSociallySDKSample */,
 				8A8073E7176786650053209C /* Vendor */,
 				8A15B90817666A490046E3CC /* Supporting Files */,
 				85B4416117288A2800D584DA /* Frameworks */,
@@ -174,20 +174,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8A15B8EC17666A390046E3CC /* GrowthSDKSample */ = {
+		8A15B8EC17666A390046E3CC /* AppSociallySDKSample */ = {
 			isa = PBXGroup;
 			children = (
-				8A15B8F717666A390046E3CC /* GrowthDemoAppDelegate.h */,
-				8A15B8F817666A390046E3CC /* GrowthDemoAppDelegate.m */,
-				8A15B8F917666A390046E3CC /* GrowthDemoMainViewController.h */,
-				8A15B8FA17666A390046E3CC /* GrowthDemoMainViewController.m */,
-				8A8073FC17678C8A0053209C /* GrowthDemoMainViewController.xib */,
+				8A15B8F717666A390046E3CC /* AppSociallyDemoAppDelegate.h */,
+				8A15B8F817666A390046E3CC /* AppSociallyDemoAppDelegate.m */,
+				8A15B8F917666A390046E3CC /* AppSociallyDemoMainViewController.h */,
+				8A15B8FA17666A390046E3CC /* AppSociallyDemoMainViewController.m */,
+				8A8073FC17678C8A0053209C /* AppSociallyDemoMainViewController.xib */,
 				8A8073F4176787EB0053209C /* InviteTableViewController.h */,
 				8A8073F5176787EB0053209C /* InviteTableViewController.m */,
 				8A8073F6176787EB0053209C /* InviteTableViewController.xib */,
 				8A80740217679E3F0053209C /* InviteTableCell.h */,
 				8A80740317679E3F0053209C /* InviteTableCell.m */,
 			);
+			name = AppSociallySDKSample;
 			path = GrowthSDKSample;
 			sourceTree = "<group>";
 		};
@@ -311,7 +312,7 @@
 				8A15B90E17666AE90046E3CC /* Default.png in Resources */,
 				8A15B90F17666AE90046E3CC /* Default@2x.png in Resources */,
 				8A8073F8176787EB0053209C /* InviteTableViewController.xib in Resources */,
-				8A8073FD17678C8A0053209C /* GrowthDemoMainViewController.xib in Resources */,
+				8A8073FD17678C8A0053209C /* AppSociallyDemoMainViewController.xib in Resources */,
 				8A8073FF176796B70053209C /* BarColor2.png in Resources */,
 				8A807401176797C60053209C /* people2@2x.png in Resources */,
 				8A8074081767A1FC0053209C /* icon_facebook@2x.png in Resources */,
@@ -330,8 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A15B90417666A390046E3CC /* GrowthDemoAppDelegate.m in Sources */,
-				8A15B90517666A390046E3CC /* GrowthDemoMainViewController.m in Sources */,
+				8A15B90417666A390046E3CC /* AppSociallyDemoAppDelegate.m in Sources */,
+				8A15B90517666A390046E3CC /* AppSociallyDemoMainViewController.m in Sources */,
 				8A15B90617666A390046E3CC /* main.m in Sources */,
 				8A8073F1176786650053209C /* IISideController.m in Sources */,
 				8A8073F2176786650053209C /* IIViewDeckController.m in Sources */,

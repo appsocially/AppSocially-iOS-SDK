@@ -1,23 +1,23 @@
 //
-//  GrowthSDKMainViewController.m
-//  GrowthSDKSample
+//  AppSociallySDKMainViewController.m
+//  AppSociallySDKSample
 //
 //  Created by Shuichi Tsutsumi.
 //  Copyright (c) 2013 AppSocially Inc. All rights reserved.
 //
 
-#import "GrowthDemoMainViewController.h"
+#import "AppSociallyDemoMainViewController.h"
 #import <AppSocially/AppSocially.h>
 #import <QuartzCore/QuartzCore.h>
 #import "IIViewDeckController.h"
 
 
-@interface GrowthDemoMainViewController ()
+@interface AppSociallyDemoMainViewController ()
 @property (nonatomic, weak) IBOutlet UINavigationItem *navItem;
 @end
 
 
-@implementation GrowthDemoMainViewController
+@implementation AppSociallyDemoMainViewController
 
 - (void)viewDidLoad {
     
