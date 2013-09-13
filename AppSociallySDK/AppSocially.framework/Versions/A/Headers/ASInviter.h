@@ -44,7 +44,6 @@ typedef enum {
 
 + (void)showInviteSheetInView:(UIView *)view;
 
-
 + (void)setSenderName:(NSString *)name;
 
 // inviteFriends:inviteInfo:completion,

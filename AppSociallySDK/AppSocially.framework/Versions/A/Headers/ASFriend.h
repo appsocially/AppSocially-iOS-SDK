@@ -13,9 +13,11 @@
 #define kASFriendDetailKeyLastName  @"last_name"
 #define kASFriendDetailKeyPhones    @"phones"
 #define kASFriendDetailKeyEmails    @"emails"
+#define kASFriendDetailKeyIcon      @"icon"
 
 #define kASInternalFriendKeyName @"name"
 #define kASInternalFriendKeyIcon @"icon"
+
 
 
 typedef enum {
