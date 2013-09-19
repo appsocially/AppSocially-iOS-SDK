@@ -52,6 +52,10 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
 
 ##Release Note
 
+###0.7.3 (Sep. 19, 2013)
+
+- Bug fixes for iOS7
+
 ###0.7.2 (Sep. 12, 2013)
 
 - iOS7 suport
