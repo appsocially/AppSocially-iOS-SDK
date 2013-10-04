@@ -409,10 +409,15 @@
     [SVProgressHUD showWithStatus:@"Creating Page..."
                          maskType:SVProgressHUDMaskTypeGradient];
     
+
     // Create landing page for Share
+    
+    NSDictionary *shareInfo = @{kDataPropertyMessage: kPresetMessage,
+                                kDataPropertyContentURL: kImageURL};
+
     [ASSharer createPageFrom:@{@"id": @"123456789", @"name": @"dummy_sendername"}
                           to:@{@"id": @"987654321", @"name": @"dummy_receivername"}
-                   shareInfo:@{@"message": @"dummy_message"}
+                   shareInfo:shareInfo
                          via:@"facebook"
            completionHandler:^(NSDictionary *result, NSError *error) {
                
