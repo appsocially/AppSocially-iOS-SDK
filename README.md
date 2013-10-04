@@ -53,6 +53,12 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
 
 ##Release Note
 
+###0.8.1 (Oct. 4, 2013)
+
+- Supported iOS7 in the Mail Compose View.
+- Fixed the Trackable Activity sample.
+
+
 ###0.8.0 (Oct. 4, 2013)
 
 ####What's new
