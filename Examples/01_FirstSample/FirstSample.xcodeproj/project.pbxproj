@@ -223,7 +223,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = IK;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "AppSocially Inc.";
 			};
 			buildConfigurationList = 85B4411D1728891500D584DA /* Build configuration list for PBXProject "FirstSample" */;
@@ -311,6 +311,7 @@
 		85B4411E1728891500D584DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				VALID_ARCHS = "armv7 armv7s";
