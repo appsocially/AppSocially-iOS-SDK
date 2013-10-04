@@ -37,6 +37,7 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
   - [Trackable share functions](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Trackable-share-functions)
   - [Aggregated share view](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Aggregated-share-view)
   - [Trackable UIActivity](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Trackable-UIActivity)
+  - [Create landing page and share with FacebookSDK's Share Dialog.](coming soon)
 
 ###Customized View Sample
 
@@ -52,13 +53,17 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
 
 ##Release Note
 
-###0.8.0 (Sep. 30, 2013)
+###0.8.0 (Oct. 4, 2013)
 
 ####New Functions
 
-- Enabled `shareInfo` properties and arguments in share functions
-- APIs to create Landing Pages.
-- iOS7 support in the SMS Compose View
+- Supported iOS7 in the SMS Compose View.
+- Enabled `shareInfo` properties and arguments in share related functions
+  - See also "API differences" of ASSharer.
+- Added APIs to create Landing Pages.
+  - See also "API differences" of ASSharer and ASInviter.
+- Added a sample function into ShareSample project.
+  - This indicates how create a landing page and share with FacebookSDK's share dialog.
 
 ####API differences
 
@@ -93,7 +98,7 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
   - ASTrackableMailActivity -> ASMailActivity
   - ASTrackableSMSActivity -> ASSMSActivity
 
-  Each class is now the subclass of ASActivity, and it can be set "shareInfo".
+  Each class is now the subclass of ASActivity, and it can be set `shareInfo`.
 
 
 
