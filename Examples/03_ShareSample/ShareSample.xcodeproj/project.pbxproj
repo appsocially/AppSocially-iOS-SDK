@@ -39,9 +39,9 @@
 		8A93BE6C17CD58290057D525 /* AppSociallySDK.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A93BE6A17CD58290057D525 /* AppSociallySDK.strings */; };
 		8A93BE7017CD584A0057D525 /* AppSocially.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8A93BE6F17CD584A0057D525 /* AppSocially.bundle */; };
 		8A93BE7217CD58550057D525 /* AppSocially.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A93BE7117CD58550057D525 /* AppSocially.framework */; };
-		8AC6D6181741833E00820179 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC6D6171741833E00820179 /* MessageUI.framework */; };
-		8AC6D61B1741835000820179 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC6D6191741835000820179 /* AddressBook.framework */; };
-		8AC6D61C1741835000820179 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC6D61A1741835000820179 /* AddressBookUI.framework */; };
+		8AB2268317FE949B00DC7C2D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB2268117FE949B00DC7C2D /* AddressBook.framework */; };
+		8AB2268417FE949B00DC7C2D /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB2268217FE949B00DC7C2D /* AddressBookUI.framework */; };
+		8AB2268617FE94A200DC7C2D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB2268517FE94A200DC7C2D /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +86,9 @@
 		8A93BE6E17CD58370057D525 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/AppSociallySDK.strings; sourceTree = "<group>"; };
 		8A93BE6F17CD584A0057D525 /* AppSocially.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AppSocially.bundle; path = ../../../AppSociallySDK/AppSocially.bundle; sourceTree = "<group>"; };
 		8A93BE7117CD58550057D525 /* AppSocially.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppSocially.framework; path = ../../AppSociallySDK/AppSocially.framework; sourceTree = "<group>"; };
+		8AB2268117FE949B00DC7C2D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		8AB2268217FE949B00DC7C2D /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		8AB2268517FE94A200DC7C2D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		8AC6D6171741833E00820179 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
 		8AC6D6191741835000820179 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
 		8AC6D61A1741835000820179 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AddressBookUI.framework; sourceTree = DEVELOPER_DIR; };
@@ -96,15 +99,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AB2268617FE94A200DC7C2D /* MessageUI.framework in Frameworks */,
+				8AB2268317FE949B00DC7C2D /* AddressBook.framework in Frameworks */,
+				8AB2268417FE949B00DC7C2D /* AddressBookUI.framework in Frameworks */,
 				8A93BE7217CD58550057D525 /* AppSocially.framework in Frameworks */,
 				8A8FCB9517988A72000FDE7A /* CoreGraphics.framework in Frameworks */,
 				8A8FCB9317988A5E000FDE7A /* Foundation.framework in Frameworks */,
 				8A8FCB9117988A58000FDE7A /* UIKit.framework in Frameworks */,
 				8A7FF708177A0F6E00F6E5A2 /* libiconv.dylib in Frameworks */,
 				8A133CD917F6700500DCBE40 /* FacebookSDK.framework in Frameworks */,
-				8AC6D61B1741835000820179 /* AddressBook.framework in Frameworks */,
-				8AC6D61C1741835000820179 /* AddressBookUI.framework in Frameworks */,
-				8AC6D6181741833E00820179 /* MessageUI.framework in Frameworks */,
 				85B447A91728B61700D584DA /* Accounts.framework in Frameworks */,
 				85B445C917288CBD00D584DA /* CFNetwork.framework in Frameworks */,
 				85B4479D1728B25200D584DA /* MobileCoreServices.framework in Frameworks */,
@@ -143,6 +146,9 @@
 		85B4416117288A2800D584DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AB2268517FE94A200DC7C2D /* MessageUI.framework */,
+				8AB2268117FE949B00DC7C2D /* AddressBook.framework */,
+				8AB2268217FE949B00DC7C2D /* AddressBookUI.framework */,
 				8A133CD817F6700500DCBE40 /* FacebookSDK.framework */,
 				8A93BE7117CD58550057D525 /* AppSocially.framework */,
 				8A8FCB9417988A72000FDE7A /* CoreGraphics.framework */,

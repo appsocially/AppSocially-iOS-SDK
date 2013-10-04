@@ -64,6 +64,21 @@
 // =============================================================================
 #pragma mark - Private
 
+- (NSArray *)iOS6Activities {
+    
+    NSArray *activities = @[UIActivityTypePostToFacebook,
+                            UIActivityTypePostToTwitter,
+                            UIActivityTypePostToWeibo,
+                            UIActivityTypeMail,
+                            UIActivityTypeMessage,
+                            UIActivityTypePrint,
+                            UIActivityTypeSaveToCameraRoll,
+                            UIActivityTypeCopyToPasteboard,
+                            UIActivityTypeAssignToContact];
+    
+    return activities;
+}
+
 - (void)shareOnTwitter {
 
     // before v0.7.3
@@ -343,11 +358,6 @@
 
 - (IBAction)showUIActivityController {
 
-    NSString *text = kPresetMessage;
-    UIImage *image = [UIImage imageNamed:kFilenameToShare];
-    
-    NSArray *items = @[text, image];
-    
     // before 0.7.3
 //    ASTrackableTwitterActivity  *twitter  = [[ASTrackableTwitterActivity alloc] init];
 //    ASTrackableFacebookActivity *facebook = [[ASTrackableFacebookActivity alloc] init];
@@ -360,20 +370,23 @@
     ASMailActivity     *mail     = [[ASMailActivity alloc] init];
     ASSMSActivity      *sms      = [[ASSMSActivity alloc] init];
 
+    NSDictionary *shareInfo = @{kDataPropertyContentURL: kImageURL,
+                                kDataPropertyMessage: kPresetMessage};
+    twitter.shareInfo = shareInfo;
+    facebook.shareInfo = shareInfo;
+    mail.shareInfo = shareInfo;
+    sms.shareInfo = shareInfo;
+
     NSArray *activities = @[twitter,
                             facebook,
                             mail,
                             sms];
     
     UIActivityViewController *activityCtr;
-    activityCtr = [[UIActivityViewController alloc] initWithActivityItems:items
+    activityCtr = [[UIActivityViewController alloc] initWithActivityItems:nil
                                                     applicationActivities:activities];
     
-    NSArray *excludedActivities = @[UIActivityTypePostToFacebook,
-                                    UIActivityTypePostToTwitter,
-                                    UIActivityTypeMail,
-                                    UIActivityTypeMessage];
-    [activityCtr setExcludedActivityTypes:excludedActivities];
+    [activityCtr setExcludedActivityTypes:[self iOS6Activities]];
     
     
     [self presentViewController:activityCtr animated:YES completion:nil];
