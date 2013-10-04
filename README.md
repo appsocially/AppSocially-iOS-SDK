@@ -55,7 +55,7 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
 
 ###0.8.0 (Oct. 4, 2013)
 
-####New Functions
+####What's new
 
 - Supported iOS7 in the SMS Compose View.
 - Enabled `shareInfo` properties and arguments in share related functions
