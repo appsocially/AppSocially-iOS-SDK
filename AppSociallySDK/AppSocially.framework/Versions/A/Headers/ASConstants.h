@@ -28,3 +28,6 @@ typedef enum {
 
 #define kUserInfoKeyScreenName @"screen_name"
 #define kUserInfoKeyPictureURL @"picture_url"
+
+#define kDataPropertyMessage @"message"
+#define kDataPropertyContentURL @"content_url"

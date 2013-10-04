@@ -31,19 +31,21 @@ typedef enum {
 
 @interface ASSharer : NSObject
 
-+ (void)setShareItems:(NSArray *)shareItems
-         forShareType:(ASShareType)shareType;
++ (NSDictionary *)shareInfoWithMessage:(NSString *)message
+                            contentUrl:(NSURL *)contentUrl;
+
+//+ (void)setStringToShare:(NSString *)stringToShare
+//              urlToShare:(NSURL *)urlToShare
+//            imageToShare:(UIImage *)imageToShare
+//            forShareType:(ASShareType)shareType;
 
 + (void)shareWithType:(ASShareType)type
            completion:(ASShareCompletionHandler)completion;
 
 + (void)shareWithType:(ASShareType)type
-           shareItems:(NSArray *)shareItems
-           completion:(ASShareCompletionHandler)completion;
-
-+ (void)shareWithType:(ASShareType)type
-           shareItems:(NSArray *)shareItems
-           contentUrl:(NSURL *)contentUrl
+            shareInfo:(NSDictionary *)shareInfo
+           urlToShare:(NSURL *)urlToShare
+         imageToShare:(UIImage *)imageToShare
            completion:(ASShareCompletionHandler)completion;
 
 // Supported only for ASShareTypeMail
@@ -57,5 +59,14 @@ typedef enum {
 // Supported only for ASShareTypeTwitter, ASShareTypeFacebok
 + (void)setComposeViewType:(ASShareComposeViewType)composeViewType
               forShareType:(ASShareType)shareType;
+
+
+// Create a Landing Page
+
++ (void)createPageFrom:(NSDictionary *)from
+                    to:(NSDictionary *)to
+             shareInfo:(NSDictionary *)shareInfo
+                   via:(NSString *)via
+     completionHandler:(void (^)(NSDictionary *result, NSError *error))completionHandler;
 
 @end

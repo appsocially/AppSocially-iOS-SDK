@@ -54,4 +54,20 @@ typedef enum {
 
 + (void)setHUDHidden:(BOOL)isHUDHidden;
 
+
+
+// Create Landing Pages
+
++ (void)createPageFrom:(NSDictionary *)from
+                    to:(NSDictionary *)to
+            inviteInfo:(NSDictionary *)inviteInfo
+                   via:(NSString *)via
+     completionHandler:(void (^)(NSDictionary *result, NSError *error))completionHandler;
+
++ (void)createPagesFrom:(NSDictionary *)from
+                     to:(NSArray *)to
+             inviteInfo:(NSDictionary *)inviteInfo
+                    via:(NSString *)via
+      completionHandler:(void (^)(NSDictionary *result, NSError *error))completionHandler;
+
 @end

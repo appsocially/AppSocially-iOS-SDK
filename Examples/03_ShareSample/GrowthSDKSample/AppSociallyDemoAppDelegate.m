@@ -9,6 +9,7 @@
 #import "AppSociallyDemoAppDelegate.h"
 #import <AppSocially/AppSocially.h>
 #import "Utils.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 
 @implementation AppSociallyDemoAppDelegate
@@ -34,6 +35,23 @@
     [[UINavigationBar appearance] setTitleTextAttributes:attributes];
         
     return YES;
+}
+
+// Needed for Facebook Share Dialog
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    
+    BOOL wasHandled = [FBAppCall handleOpenURL:url
+                             sourceApplication:sourceApplication
+                               fallbackHandler:^(FBAppCall *call) {
+                                   
+                                   NSLog(@"url:%@, call:%@", url, call);
+                               }];
+    
+    // add app-specific handling code here
+    return wasHandled;
 }
 
 @end

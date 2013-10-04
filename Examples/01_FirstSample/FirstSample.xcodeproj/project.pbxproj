@@ -39,7 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		85B4415F17288A2800D584DA /* GrowthSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowthSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B4415F17288A2800D584DA /* FirstSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B445C017288AA400D584DA /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
 		85B445C217288ADF00D584DA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		85B445C617288CB800D584DA /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libresolv.dylib; sourceTree = DEVELOPER_DIR; };
@@ -119,7 +119,7 @@
 		85B4416017288A2800D584DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85B4415F17288A2800D584DA /* GrowthSDKSample.app */,
+				85B4415F17288A2800D584DA /* FirstSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 			);
 			name = FirstSampleDemo;
 			productName = DemoApp;
-			productReference = 85B4415F17288A2800D584DA /* GrowthSDKSample.app */;
+			productReference = 85B4415F17288A2800D584DA /* FirstSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -367,7 +367,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_NAME = GrowthSDKSample;
+				PRODUCT_NAME = FirstSample;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s";
@@ -410,7 +410,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_NAME = GrowthSDKSample;
+				PRODUCT_NAME = FirstSample;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -464,7 +464,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_NAME = GrowthSDKSample;
+				PRODUCT_NAME = FirstSample;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;

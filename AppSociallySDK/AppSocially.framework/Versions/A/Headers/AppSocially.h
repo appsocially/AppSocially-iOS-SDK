@@ -35,10 +35,11 @@
 
 #if defined(__has_include)
 #if __has_include(<UIKit/UIActivity.h>)
-#import "ASTrackableTwitterActivity.h"
-#import "ASTrackableFacebookActivity.h"
-#import "ASTrackableMailActivity.h"
-#import "ASTrackableSMSActivity.h"
+#import "ASActivity.h"
+#import "ASTwitterActivity.h"
+#import "ASFacebookActivity.h"
+#import "ASMailActivity.h"
+#import "ASSMSActivity.h"
 #endif
 #endif
 

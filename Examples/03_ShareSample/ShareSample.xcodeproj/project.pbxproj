@@ -16,6 +16,9 @@
 		85B447A91728B61700D584DA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B447A81728B61700D584DA /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		85B447AB1728B62800D584DA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B447AA1728B62800D584DA /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		85B447BD1728BC1100D584DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B447BC1728BC1100D584DA /* QuartzCore.framework */; };
+		8A133CD917F6700500DCBE40 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A133CD817F6700500DCBE40 /* FacebookSDK.framework */; };
+		8A133CDE17F8312900DCBE40 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8A133CDB17F8312900DCBE40 /* SVProgressHUD.bundle */; };
+		8A133CDF17F8312900DCBE40 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A133CDD17F8312900DCBE40 /* SVProgressHUD.m */; };
 		8A15B90217666A390046E3CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A15B8F317666A390046E3CC /* InfoPlist.strings */; };
 		8A15B90317666A390046E3CC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A15B8F517666A390046E3CC /* MainStoryboard.storyboard */; };
 		8A15B90417666A390046E3CC /* AppSociallyDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15B8F817666A390046E3CC /* AppSociallyDemoAppDelegate.m */; };
@@ -52,6 +55,10 @@
 		85B447A81728B61700D584DA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Accounts.framework; sourceTree = DEVELOPER_DIR; };
 		85B447AA1728B62800D584DA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Social.framework; sourceTree = DEVELOPER_DIR; };
 		85B447BC1728BC1100D584DA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		8A133CD817F6700500DCBE40 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = Vendor/FacebookSDK.framework; sourceTree = "<group>"; };
+		8A133CDB17F8312900DCBE40 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		8A133CDC17F8312900DCBE40 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		8A133CDD17F8312900DCBE40 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		8A15B8F117666A390046E3CC /* ShareSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ShareSample-Info.plist"; sourceTree = "<group>"; };
 		8A15B8F217666A390046E3CC /* ShareSample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShareSample-Prefix.pch"; sourceTree = "<group>"; };
 		8A15B8F417666A390046E3CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -94,6 +101,7 @@
 				8A8FCB9317988A5E000FDE7A /* Foundation.framework in Frameworks */,
 				8A8FCB9117988A58000FDE7A /* UIKit.framework in Frameworks */,
 				8A7FF708177A0F6E00F6E5A2 /* libiconv.dylib in Frameworks */,
+				8A133CD917F6700500DCBE40 /* FacebookSDK.framework in Frameworks */,
 				8AC6D61B1741835000820179 /* AddressBook.framework in Frameworks */,
 				8AC6D61C1741835000820179 /* AddressBookUI.framework in Frameworks */,
 				8AC6D6181741833E00820179 /* MessageUI.framework in Frameworks */,
@@ -135,6 +143,7 @@
 		85B4416117288A2800D584DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A133CD817F6700500DCBE40 /* FacebookSDK.framework */,
 				8A93BE7117CD58550057D525 /* AppSocially.framework */,
 				8A8FCB9417988A72000FDE7A /* CoreGraphics.framework */,
 				8A8FCB9217988A5E000FDE7A /* Foundation.framework */,
@@ -154,6 +163,16 @@
 				85B445D117288F0900D584DA /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A133CDA17F8312900DCBE40 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				8A133CDB17F8312900DCBE40 /* SVProgressHUD.bundle */,
+				8A133CDC17F8312900DCBE40 /* SVProgressHUD.h */,
+				8A133CDD17F8312900DCBE40 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		8A15B8EC17666A390046E3CC /* AppSociallySDKSample */ = {
@@ -209,6 +228,7 @@
 		8A701CC017BADA7300E4DA59 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8A133CDA17F8312900DCBE40 /* SVProgressHUD */,
 				8A701CC117BADA7300E4DA59 /* ADVFlatUI */,
 			);
 			path = Vendor;
@@ -250,7 +270,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = IK;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "AppSocially Inc.";
 			};
 			buildConfigurationList = 85B4411D1728891500D584DA /* Build configuration list for PBXProject "ShareSample" */;
@@ -285,6 +305,7 @@
 				8A15B90F17666AE90046E3CC /* Default@2x.png in Resources */,
 				8A15B91317666B020046E3CC /* BarColor.png in Resources */,
 				8A15B91417666B020046E3CC /* people@2x.png in Resources */,
+				8A133CDE17F8312900DCBE40 /* SVProgressHUD.bundle in Resources */,
 				8A21E3181787453B00DB8142 /* hector.jpg in Resources */,
 				8A701CC617BB235400E4DA59 /* dog.jpg in Resources */,
 				8A93BE6C17CD58290057D525 /* AppSociallySDK.strings in Resources */,
@@ -301,6 +322,7 @@
 			files = (
 				8A15B90417666A390046E3CC /* AppSociallyDemoAppDelegate.m in Sources */,
 				8A15B90517666A390046E3CC /* AppSociallyDemoMainViewController.m in Sources */,
+				8A133CDF17F8312900DCBE40 /* SVProgressHUD.m in Sources */,
 				8A15B90617666A390046E3CC /* main.m in Sources */,
 				8A701CC417BADA7300E4DA59 /* Utils.m in Sources */,
 			);
@@ -341,6 +363,7 @@
 		85B4411E1728891500D584DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				VALID_ARCHS = "armv7 armv7s";
@@ -372,8 +395,9 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../../AppSociallySDK\"",
+					"$(SRCROOT)",
+					"$(SRCROOT)/../../AppSociallySDK",
+					"$(SRCROOT)/Vendor",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -421,8 +445,9 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../../AppSociallySDK\"",
+					"$(SRCROOT)",
+					"$(SRCROOT)/../../AppSociallySDK",
+					"$(SRCROOT)/Vendor",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -475,8 +500,9 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../../AppSociallySDK\"",
+					"$(SRCROOT)",
+					"$(SRCROOT)/../../AppSociallySDK",
+					"$(SRCROOT)/Vendor",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

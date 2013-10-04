@@ -10,6 +10,8 @@
 #import <AppSocially/AppSocially.h>
 #import <QuartzCore/QuartzCore.h>
 #import "Utils.h"
+#import <FacebookSDK/FacebookSDK.h>
+#import "SVProgressHUD.h"
 
 
 #define kBtnColor [UIColor colorWithRed:0. green:150./255. blue:187./255. alpha:1.]
@@ -23,6 +25,7 @@
 @property (nonatomic, weak) IBOutlet UIButton *showShareComposeViewBtn;
 @property (nonatomic, weak) IBOutlet UIButton *chooseOnWhatBtn;
 @property (nonatomic, weak) IBOutlet UIButton *trackableUIActivityBtn;
+@property (nonatomic, weak) IBOutlet UIButton *shareDialogBtn;
 @end
 
 
@@ -50,6 +53,11 @@
     [self.trackableUIActivityBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.trackableUIActivityBtn.layer.cornerRadius = 3.0;
     self.trackableUIActivityBtn.layer.masksToBounds = YES;
+
+    [self.shareDialogBtn setBackgroundImage:btnColorImage forState:UIControlStateNormal];
+    [self.shareDialogBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.shareDialogBtn.layer.cornerRadius = 3.0;
+    self.shareDialogBtn.layer.masksToBounds = YES;
 }
 
 
@@ -57,19 +65,37 @@
 #pragma mark - Private
 
 - (void)shareOnTwitter {
-    
-    UIImage *image = [UIImage imageNamed:kFilenameToShare];
-    NSString *presetMessage = kPresetMessage;
-    NSArray *shareItems = @[image, presetMessage];
-    
-    // > OPTIONAL
-    // If you want include a image or video in the generated page, you can set the content's URL.
-    NSURL *contentUrl = [NSURL URLWithString:kImageURL];
-    // < OPTIONAL
 
+    // before v0.7.3
+//    UIImage *image = [UIImage imageNamed:kFilenameToShare];
+//    NSString *presetMessage = kPresetMessage;
+//    NSArray *shareItems = @[image, presetMessage];
+//    
+//    NSURL *contentUrl = [NSURL URLWithString:kImageURL];
+//
+//    [ASSharer shareWithType:ASShareTypeTwitter
+//                 shareItems:shareItems
+//                 contentUrl:contentUrl
+//                 completion:^(NSError *error) {
+//                     if (error) {
+//                         NSLog(@"error occured:%@", error);
+//                     }
+//                     else {
+//                         NSLog(@"Suceeded!");
+//                     }
+//                 }];
+
+    
+    // after v0.8.0
+    
+    NSDictionary *shareInfo = @{kDataPropertyMessage: kPresetMessage,
+                                kDataPropertyContentURL: kImageURL  // To include a image or video in the generated page, you can set the content's URL.
+                                };
+    
     [ASSharer shareWithType:ASShareTypeTwitter
-                 shareItems:shareItems
-                 contentUrl:contentUrl
+                  shareInfo:shareInfo
+                 urlToShare:[NSURL URLWithString:kImageURL]
+               imageToShare:[UIImage imageNamed:kFilenameToShare]
                  completion:^(NSError *error) {
                      if (error) {
                          NSLog(@"error occured:%@", error);
@@ -81,21 +107,38 @@
 }
 
 - (void)shareOnFacebook {
+
+    // before 0.7.3
+//    UIImage *image = [UIImage imageNamed:kFilenameToShare];
+//    NSString *presetMessage = kPresetMessage;
+//    NSArray *shareItems = @[image, presetMessage];
+//    NSURL *contentUrl = [NSURL URLWithString:kImageURL];
+//    
+//    [ASSharer shareWithType:ASShareTypeFacebook
+//                 shareItems:shareItems
+//                 contentUrl:contentUrl
+//                 completion:^(NSError *error) {
+//
+//                     if (error) {
+//                         NSLog(@"error occured:%@", error);
+//                     }
+//                     else {
+//                         NSLog(@"Suceeded!");
+//                     }
+//                 }];
+
     
-    UIImage *image = [UIImage imageNamed:kFilenameToShare];
-    NSString *presetMessage = kPresetMessage;
-    NSArray *shareItems = @[image, presetMessage];
+    // after v0.8.0
     
-    // > OPTIONAL
-    // If you want include a image or video in the generated page, you can set the content's URL.
-    NSURL *contentUrl = [NSURL URLWithString:kImageURL];
-    // < OPTIONAL
+    NSDictionary *shareInfo = @{kDataPropertyMessage: kPresetMessage,
+                                kDataPropertyContentURL: kImageURL  // To include a image or video in the generated page, you can set the content's URL.
+                                };
     
     [ASSharer shareWithType:ASShareTypeFacebook
-                 shareItems:shareItems
-                 contentUrl:contentUrl
+                  shareInfo:shareInfo
+                 urlToShare:[NSURL URLWithString:kImageURL]
+               imageToShare:[UIImage imageNamed:kFilenameToShare]
                  completion:^(NSError *error) {
-
                      if (error) {
                          NSLog(@"error occured:%@", error);
                      }
@@ -106,16 +149,38 @@
 }
 
 - (void)shareViaMail {
+
+    // before 0.7.3
+//    NSURL *url = [NSURL URLWithString:kImageURL];
+//    
+//    [ASSharer setSenderName:@"SENDER_NAME" type:ASShareTypeMail];
+//    [ASSharer shareWithType:ASShareTypeMail
+//                 shareItems:@[kPresetMessage]
+//                 contentUrl:url
+//                 completion:^(NSError *error) {
+//                     
+//                     if (error) {
+//                         NSLog(@"error occured:%@", error);
+//                     }
+//                     else {
+//                         NSLog(@"Suceeded!");
+//                     }
+//                 }];
+
     
-    // Share function via email can't attach UIImage objects.
-    NSURL *url = [NSURL URLWithString:kImageURL];
+    // after v0.8.0
+    
+    NSDictionary *shareInfo = @{kDataPropertyMessage: kPresetMessage,
+                                kDataPropertyContentURL: kImageURL  // To include a image or video in the generated page, you can set the content's URL.
+                                };
     
     [ASSharer setSenderName:@"SENDER_NAME" type:ASShareTypeMail];
+    
     [ASSharer shareWithType:ASShareTypeMail
-                 shareItems:@[kPresetMessage]
-                 contentUrl:url
+                  shareInfo:shareInfo
+                 urlToShare:nil     // Share via email can't attach UIImage objects.
+               imageToShare:[UIImage imageNamed:kFilenameToShare]
                  completion:^(NSError *error) {
-                     
                      if (error) {
                          NSLog(@"error occured:%@", error);
                      }
@@ -126,20 +191,44 @@
 }
 
 - (void)shareViaSMS {
-    
-    NSString *presetMessage = kPresetMessage;
-    NSArray *shareItems = @[presetMessage];
-    
-    // > OPTIONAL
-    // If you want include a image or video in the generated page, you can set the content's URL.
-    NSURL *contentUrl = [NSURL URLWithString:kImageURL];
-    // < OPTIONAL
 
+    // before 0.7.3
+    
+//    NSString *presetMessage = kPresetMessage;
+//    NSArray *shareItems = @[presetMessage];
+//    
+//    // > OPTIONAL
+//    // If you want include a image or video in the generated page, you can set the content's URL.
+//    NSURL *contentUrl = [NSURL URLWithString:kImageURL];
+//    // < OPTIONAL
+//
+//    [ASSharer shareWithType:ASShareTypeSMS
+//                 shareItems:shareItems
+//                 contentUrl:contentUrl
+//                 completion:^(NSError *error) {
+//                     NSLog(@"sharing on  has been completed! error:%@", error);
+//                 }];
+
+    
+    // after v0.8.0
+    
+    NSDictionary *shareInfo = @{kDataPropertyMessage: kPresetMessage,
+                                kDataPropertyContentURL: kImageURL // To include a image or video in the generated page, you can set the content's URL.
+                                };
+    
     [ASSharer shareWithType:ASShareTypeSMS
-                 shareItems:shareItems
-                 contentUrl:contentUrl
+                  shareInfo:shareInfo
+                 urlToShare:[NSURL URLWithString:kImageURL]
+               imageToShare:[UIImage imageNamed:kFilenameToShare]
                  completion:^(NSError *error) {
-                     NSLog(@"sharing on  has been completed! error:%@", error);
+                     
+                     if (error) {
+                         
+                         NSLog(@"error occured:%@", error);
+                     }
+                     else {
+                         NSLog(@"Suceeded!");
+                     }
                  }];
 }
 
@@ -226,12 +315,20 @@
     shareCtr.backBtn = cancelBtn;
     shareCtr.sendBtn = sendBtn;
     shareCtr.imageToShare = [UIImage imageNamed:kFilenameToShare];
+    
+    // before 0.7.3
+//    shareCtr.presetMessage = kPresetMessage;
+//    shareCtr.contentUrl = [NSURL URLWithString:kImageURL];
+
+    // after 0.8.0
     shareCtr.presetMessage = kPresetMessage;
-    shareCtr.contentUrl = [NSURL URLWithString:kImageURL];
+    shareCtr.shareInfo = @{kDataPropertyContentURL: [NSURL URLWithString:kImageURL]};
+
     [self presentViewController:shareCtr
                        animated:YES
                      completion:^{
                      }];
+
 }
 
 - (IBAction)showActionSheet {
@@ -251,11 +348,18 @@
     
     NSArray *items = @[text, image];
     
-    ASTrackableTwitterActivity  *twitter  = [[ASTrackableTwitterActivity alloc] init];
-    ASTrackableFacebookActivity *facebook = [[ASTrackableFacebookActivity alloc] init];
-    ASTrackableMailActivity     *mail     = [[ASTrackableMailActivity alloc] init];
-    ASTrackableSMSActivity      *sms      = [[ASTrackableSMSActivity alloc] init];
-    
+    // before 0.7.3
+//    ASTrackableTwitterActivity  *twitter  = [[ASTrackableTwitterActivity alloc] init];
+//    ASTrackableFacebookActivity *facebook = [[ASTrackableFacebookActivity alloc] init];
+//    ASTrackableMailActivity     *mail     = [[ASTrackableMailActivity alloc] init];
+//    ASTrackableSMSActivity      *sms      = [[ASTrackableSMSActivity alloc] init];
+
+    // after 0.8.0
+    ASTwitterActivity  *twitter  = [[ASTwitterActivity alloc] init];
+    ASFacebookActivity *facebook = [[ASFacebookActivity alloc] init];
+    ASMailActivity     *mail     = [[ASMailActivity alloc] init];
+    ASSMSActivity      *sms      = [[ASSMSActivity alloc] init];
+
     NSArray *activities = @[twitter,
                             facebook,
                             mail,
@@ -298,6 +402,52 @@
     [ASSharer setSenderName:@"SENDER_NAME" type:ASShareTypeMail];
     
     // ---- OPTIONAL END ----
+}
+
+- (IBAction)shareWithFacebookSDK {
+
+    [SVProgressHUD showWithStatus:@"Creating Page..."
+                         maskType:SVProgressHUDMaskTypeGradient];
+    
+    // Create landing page for Share
+    [ASSharer createPageFrom:@{@"id": @"123456789", @"name": @"dummy_sendername"}
+                          to:@{@"id": @"987654321", @"name": @"dummy_receivername"}
+                   shareInfo:@{@"message": @"dummy_message"}
+                         via:@"facebook"
+           completionHandler:^(NSDictionary *result, NSError *error) {
+               
+               [SVProgressHUD dismiss];
+               
+               if (error) {
+                   
+                   NSLog(@"error:%@", error);
+                   
+                   return;
+               }
+               
+               NSDictionary *pageInfo = result[@"page"];
+               NSString *urlStr = pageInfo[@"url"];
+               NSLog(@"result:%@, pageInfo:%@, urlStr:%@", result, pageInfo, urlStr);
+               
+               FBAppCall *appCall = [FBDialogs presentShareDialogWithLink:[NSURL URLWithString:urlStr]
+                                                                  handler:
+                                     ^(FBAppCall *call, NSDictionary *results, NSError *error) {
+                                         
+                                         if(error) {
+                                             
+                                             NSLog(@"Error: %@", error.description);
+                                         }
+                                         else {
+                                             
+                                             NSLog(@"Success!");
+                                         }
+                                     }];
+               
+               if (!appCall) {
+                   
+                   NSLog(@"The Share Dialog in Facebook app is not available.");
+               }
+            }];
 }
 
 @end

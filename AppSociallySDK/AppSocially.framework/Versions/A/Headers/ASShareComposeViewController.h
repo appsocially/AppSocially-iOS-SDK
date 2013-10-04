@@ -12,8 +12,16 @@
 
 @property (nonatomic, strong) UIBarButtonItem *backBtn;
 @property (nonatomic, strong) UIBarButtonItem *sendBtn;
+
+// Image to share.
+// This property is prior to imageAsThumbnail property.
 @property (nonatomic, strong) UIImage *imageToShare;
-@property (nonatomic, strong) NSURL *contentUrl;
+
+// This image doesn't be shared.
+// The property imageToShare is prior to this property.
+@property (nonatomic, strong) UIImage *imageAsThumbnail;
+
 @property (nonatomic, strong) NSString *presetMessage;
+@property (nonatomic, strong) NSDictionary *shareInfo;
 
 @end

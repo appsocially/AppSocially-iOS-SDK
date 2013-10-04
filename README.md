@@ -52,6 +52,51 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
 
 ##Release Note
 
+###0.8.0 (Sep. 30, 2013)
+
+####New Functions
+
+- Enabled `shareInfo` properties and arguments in share functions
+- APIs to create Landing Pages.
+- iOS7 support in the SMS Compose View
+
+####API differences
+
+- ASSharer:
+
+  - `shareInfoWithMessage:contentUrl:` (Added)
+  - `setShareItems:forShareType:` (Removed. Use `setStringToShare:urlToShare:imageToShare:forShareType:` instead.)
+  - `setStringToShare:urlToShare:imageToShare:forShareType:` (Added)
+  - `shareWithType:shareItems:completion:` (Removed. Use `shareWithType:shareInfo:urlToShare:imageToShare:completion:` instead.)
+  - `shareWithType:shareItems:contentUrl:completion:` (Removed. Use `shareWithType:shareInfo:urlToShare:imageToShare:completion:` instead.)
+  - `shareWithType:shareInfo:urlToShare:imageToShare:completion:` (Added)
+  - `createPageFrom:to:shareInfo:via:completionHandler:` (Added)
+
+
+- ASShareComposeViewControllre
+  - `imageAsThumbnail` (Added)
+  - `contentUrl` (Removed. Set into `shareInfo` instead with kDataPropertyContentURL key.)
+  - `shareInfo` (Added)
+
+- ASInviter:
+  - `createPageFrom:to:inviteInfo:via:completionHandler:` (Added)
+  - `createPagesFrom:to:inviteInfo:via:completionHandler:` (Added)
+  
+- ASConstants.h
+  - `kDataPropertyMessage` (Added)
+  - `kDataPropertyContentURL` (Added)
+
+
+- Class name changes
+  - ASTrackableFacebookActivity -> ASFacebookActivity
+  - ASTrackableTwitterActivity -> ASTwitterActivity
+  - ASTrackableMailActivity -> ASMailActivity
+  - ASTrackableSMSActivity -> ASSMSActivity
+
+  Each class is now the subclass of ASActivity, and it can be set "shareInfo".
+
+
+
 ###0.7.3 (Sep. 19, 2013)
 
 - Bug fixes for iOS7
