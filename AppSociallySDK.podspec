@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   }
   s.author       = "AppSocially"
 
-  s.platform     = :ios, '5.0'
+  s.platform     = :ios
 
   s.source       = { :http => "https://github.com/appsocially/AppSocially-iOS-SDK/archive/release-0.8.1.zip" }
   s.resources = "AppSociallySDK/AppSocially.bundle"
