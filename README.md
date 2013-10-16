@@ -37,7 +37,7 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
   - [Trackable share functions](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Trackable-share-functions)
   - [Aggregated share view](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Aggregated-share-view)
   - [Trackable UIActivity](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Trackable-UIActivity)
-  - [Create landing page and share with FacebookSDK's Share Dialog.](coming soon)
+  - [Create landing page and share with FacebookSDK's Share Dialog.](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Create-landing-page-and-share-with-FacebookSDK's-Share-Dialog)
 
 ###Customized View Sample
 
