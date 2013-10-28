@@ -337,7 +337,7 @@
 
     // after 0.8.0
     shareCtr.presetMessage = kPresetMessage;
-    shareCtr.shareInfo = @{kDataPropertyContentURL: [NSURL URLWithString:kImageURL]};
+    shareCtr.shareInfo = @{kDataPropertyContentURL: kImageURL};
 
     [self presentViewController:shareCtr
                        animated:YES
