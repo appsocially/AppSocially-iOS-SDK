@@ -11,7 +11,8 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
 
-  s.source       = { :http => "https://github.com/appsocially/AppSocially-iOS-SDK/archive/release-0.8.1.zip" }
+  s.source       = { :git => "https://github.com/appsocially/AppSocially-iOS-SDK.git", 
+  :tag => "release-0.8.1" }
   s.resources = "AppSociallySDK/AppSocially.bundle"
 
   s.frameworks = 'AddressBook', 'AddressBookUI', 'CFNetwork', 'MessageUI', 'MobileCoreServices', 'QuartzCore', 'Security', 'SystemConfiguration'
