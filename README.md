@@ -2,10 +2,27 @@
 
 Integrate user-acquisition functions into your app.
 
-##Build Sample Apps
+##Downloads
 
-1. **[Download the SDK](https://github.com/appsocially/AppSocially-iOS-SDK/releases)** and unzip the file.
-2. **Build and Run!!** (Sample projects can be found in the "Examples" folder.)
+###Download and install with CocoaPods
+
+Add Podfile.
+
+````
+pod "AppSociallySDK"
+````
+
+And
+
+````
+$ pod install
+````
+
+###Download from GitHub
+
+https://github.com/appsocially/AppSocially-iOS-SDK/releases
+
+
 
 ##First Guides
 
@@ -34,9 +51,8 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
 ![sample3](http://appsocially-docs-resources.s3.amazonaws.com/ss_ShareSample__.png)
 
 - Related Documents:
-  - [Trackable share functions](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Trackable-share-functions)
+  - [Trackable share functions (Trackable UIActivity)](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Trackable-share-functions)
   - [Aggregated share view](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Aggregated-share-view)
-  - [Trackable UIActivity](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Trackable-UIActivity)
   - [Create landing page and share with FacebookSDK's Share Dialog.](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Create-landing-page-and-share-with-FacebookSDK's-Share-Dialog)
 
 ###Customized View Sample
