@@ -18,6 +18,7 @@
 #define kPresetMessage @"This is preset message."
 #define kFilenameToShare @"dog.jpg"
 #define kImageURL @"https://sphotos-b-pao.xx.fbcdn.net/hphotos-ash4/1004691_1405060609714824_1759329629_n.jpg"
+#define kArticleURL @"http://www.itmedia.co.jp/mobile/spv/1310/28/news032.html"
 
 
 @interface AppSociallyDemoMainViewController ()
@@ -228,7 +229,7 @@
     // after v0.8.0
     
     NSDictionary *shareInfo = @{kDataPropertyMessage: kPresetMessage,
-                                kDataPropertyContentURL: kImageURL // To include a image or video in the generated page, you can set the content's URL.
+                                kDataPropertyContentURL: kImageURL, // To include a image or video in the generated page, you can set the content's URL.
                                 };
     
     [ASSharer shareWithType:ASShareTypeSMS
@@ -337,7 +338,10 @@
 
     // after 0.8.0
     shareCtr.presetMessage = kPresetMessage;
-    shareCtr.shareInfo = @{kDataPropertyContentURL: kImageURL};
+    shareCtr.shareInfo = @{
+                           kDataPropertyContentURL: kImageURL,
+                           @"article_url": kArticleURL,
+                           };
 
     [self presentViewController:shareCtr
                        animated:YES
@@ -428,6 +432,8 @@
     NSDictionary *shareInfo = @{kDataPropertyMessage: kPresetMessage,
                                 kDataPropertyContentURL: kImageURL};
 
+#warning TODO: fromのidとnameを取得しておく
+#warning TODO: to不要
     [ASSharer createPageFrom:@{@"id": @"123456789", @"name": @"dummy_sendername"}
                           to:@{@"id": @"987654321", @"name": @"dummy_receivername"}
                    shareInfo:shareInfo
