@@ -161,8 +161,8 @@
     NSString *urlStr = @"http://img.uptodown.net/screen/android/bigthumb/otaku-camera-1.jpg";
 
     // Any key is abailable. (Following key is used in "Include Content" template.)
-    NSDictionary *inviteInfo = @{@"content_url": urlStr,
-                                 @"message" :kPresetMessage};
+    NSDictionary *inviteInfo = @{kDataPropertyContentURL: urlStr,
+                                 kDataPropertyMessage :kPresetMessage};
     
     // > OPTIONAL
     // This name is used for Mail / SMS. (not used for Facebook / Twitter.)

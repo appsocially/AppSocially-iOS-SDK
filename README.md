@@ -51,7 +51,7 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
 ![sample3](http://appsocially-docs-resources.s3.amazonaws.com/ss_ShareSample__.png)
 
 - Related Documents:
-  - [Trackable share functions (Trackable UIActivity)](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Trackable-share-functions)
+  - [Trackable UIActivity](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Trackable-UIActivity)
   - [Aggregated share view](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Aggregated-share-view)
   - [Create landing page and share with FacebookSDK's Share Dialog.](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Create-landing-page-and-share-with-FacebookSDK's-Share-Dialog)
 
@@ -68,6 +68,10 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
 - To use Facebook or Twitter related functions, iOS 6.0 or later is needed.
 
 ##Release Note
+
+###0.8.2 (Nov. 30, 2013)
+
+- Fixed minor bugs.
 
 ###0.8.1 (Oct. 4, 2013)
 

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AppSociallySDK"
-  s.version      = "0.8.1"
+  s.version      = "0.8.2"
   s.summary      = "Integrate user-acquisition functions into your app."
   s.homepage     = "https://appsocial.ly/"
   s.license = {
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
 
   s.source       = { :git => "https://github.com/appsocially/AppSocially-iOS-SDK.git", 
-  :tag => "release-0.8.1" }
+  :tag => "release-0.8.2" }
   s.resources = "AppSociallySDK/AppSocially.bundle"
 
   s.frameworks = 'AddressBook', 'AddressBookUI', 'CFNetwork', 'MessageUI', 'MobileCoreServices', 'QuartzCore', 'Security', 'SystemConfiguration'

@@ -106,6 +106,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSDictionary *inviteInfo = @{kDataPropertyContentURL: [UIImage imageNamed:@"people2"]};
     switch (indexPath.row) {
         case 0:
         default:
@@ -113,7 +114,9 @@
             break;
         case 1:
             // Twitter
-            [ASInviter inviteVia:ASInviteTypeTwitterDM inviteInfo:nil completion:nil];
+            [ASInviter inviteVia:ASInviteTypeTwitterDM
+                      inviteInfo:inviteInfo
+                      completion:nil];
             break;
         case 2:
             // Facebook
