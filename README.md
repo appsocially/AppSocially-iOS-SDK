@@ -69,6 +69,14 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
 
 ##Release Note
 
+###0.8.3 (Dec. 12, 2013)
+
+- Supported arm64 and x86_64 architectures.
+- Fixed a bug related twitter share in iOS7.
+- Fixed a bug for Trackable UIActivity.
+- Fixed some minor bugs.
+
+
 ###0.8.2 (Nov. 30, 2013)
 
 - Fixed minor bugs.
