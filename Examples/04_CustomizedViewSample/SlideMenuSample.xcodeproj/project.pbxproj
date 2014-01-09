@@ -100,6 +100,8 @@
 		8AC6D6171741833E00820179 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
 		8AC6D6191741835000820179 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
 		8AC6D61A1741835000820179 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AddressBookUI.framework; sourceTree = DEVELOPER_DIR; };
+		8AF97969187EC22D00CEFE6E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/AppSociallySDK.strings; sourceTree = "<group>"; };
+		8AF9796A187EC23C00CEFE6E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AppSociallySDK.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +293,8 @@
 				English,
 				es,
 				pt,
+				ko,
+				"zh-Hans",
 			);
 			mainGroup = 85B441191728891500D584DA;
 			productRefGroup = 85B4416017288A2800D584DA /* Products */;
@@ -359,6 +363,8 @@
 				8A93BE7417CD5FE40057D525 /* en */,
 				8A93BE7617CD5FE90057D525 /* es */,
 				8A93BE7717CD5FEB0057D525 /* pt */,
+				8AF97969187EC22D00CEFE6E /* ko */,
+				8AF9796A187EC23C00CEFE6E /* zh-Hans */,
 			);
 			name = AppSociallySDK.strings;
 			sourceTree = "<group>";
