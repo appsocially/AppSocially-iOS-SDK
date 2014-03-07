@@ -69,6 +69,11 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
 
 ##Release Note
 
+###0.8.5 (Mar. 7. 2014)
+
+- Fixed some bugs
+
+
 ###0.8.4 (Jan. 23. 2014)
 
 - Fixed a bug for [Twitter API's restriction](https://dev.twitter.com/discussions/24239)
