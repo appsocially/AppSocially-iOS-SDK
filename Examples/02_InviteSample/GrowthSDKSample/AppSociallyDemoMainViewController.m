@@ -171,15 +171,15 @@
 
     [picker dismissViewControllerAnimated:YES
                                completion:^{
+                                   
+                                   [ASInviter inviteFriends:self.pickedFriends
+                                                 inviteInfo:inviteInfo
+                                                 completion:^(NSError *error) {
+                                                     
+                                                     NSLog(@"error:%@", error);
+                                                     self.pickedFriends = nil;
+                                                 }];
                                }];
-    
-    [ASInviter inviteFriends:self.pickedFriends
-                  inviteInfo:inviteInfo
-                  completion:^(NSError *error) {
-                      
-                      NSLog(@"error:%@", error);
-                      self.pickedFriends = nil;
-                  }];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
