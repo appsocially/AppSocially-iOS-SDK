@@ -69,6 +69,14 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
 
 ##Release Note
 
+###0.8.6 (Apr. 28. 2014)
+
+- Fixed some bugs in ASFriendPickerController
+  - https://github.com/appsocially/AppSocially-iOS-SDK/issues/8
+  - https://github.com/appsocially/AppSocially-iOS-SDK/issues/7
+  - https://github.com/appsocially/AppSocially-iOS-SDK/issues/6
+
+
 ###0.8.5 (Mar. 7. 2014)
 
 - Fixed some bugs

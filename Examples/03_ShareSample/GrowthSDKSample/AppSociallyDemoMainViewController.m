@@ -432,8 +432,6 @@
     NSDictionary *shareInfo = @{kDataPropertyMessage: kPresetMessage,
                                 kDataPropertyContentURL: kImageURL};
 
-#warning TODO: fromのidとnameを取得しておく
-#warning TODO: to不要
     [ASSharer createPageFrom:@{@"id": @"123456789", @"name": @"dummy_sendername"}
                           to:@{@"id": @"987654321", @"name": @"dummy_receivername"}
                    shareInfo:shareInfo
