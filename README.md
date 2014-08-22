@@ -52,21 +52,20 @@ https://github.com/appsocially/AppSocially-iOS-SDK/releases
 
 
 
-##First Guides
+##Tutorials
 
 - [Create Unique Landing Pages and Share with Facebook on AppSocially!] (https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Create-Unique-Landing-Pages-and-Share-with-Facebook-SDK-Share-Dialog)
+
+##Quick Guides
+
 - [How to install the SDK into your project](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/How-to-install-the-SDK-into-your-project)
 - [1 line implement of invite functions](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/1-line-implement-of-invite-functions)
 
 
-##Other Documents
+##Samples and Related Documents
 
-The documentation can be found at the [wiki](https://github.com/appsocially/AppSocially-iOS-SDK/wiki).
-
-
-##Samples and the related documents
-
-###Invite Sample
+###Invitation Sample
+AppSocially makes it easy to create tools like this this aggregated friend list. Just drop in a couple of lines as code.
 
 ![sample2](http://appsocially-docs-resources.s3.amazonaws.com/ss_InviteSmaple__.png)
 
@@ -76,6 +75,7 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
   - [Localization](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Localization)
 
 ###Share Sample
+Just create a button in your app for sharing, insert a couple of lines of code, and wa-la! You've got a share dialog.
 
 ![sample3](http://appsocially-docs-resources.s3.amazonaws.com/ss_ShareSample__.png)
 
@@ -85,15 +85,21 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
   - [Create landing page and share with FacebookSDK's Share Dialog.](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Create-landing-page-and-share-with-FacebookSDK's-Share-Dialog)
 
 ###Customized View Sample
+Check out these docs to see how to call the AppSocially sharing functionality from your own custom views.
 
 ![sample4](http://appsocially-docs-resources.s3.amazonaws.com/ss_CustomizedViewSample__.png)
 
 - Related Documents:
   - [Custom View](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Custom-View)
 
+##Other Documents
+
+The documentation can be found at the [wiki](https://github.com/appsocially/AppSocially-iOS-SDK/wiki).
+
 ##Compatibility
 
 - iOS 5.0+
 - To use Facebook or Twitter related functions, iOS 6.0 or later is needed.
+- For apps created after April 30, 2014, Facebook's direct invites are no longer available.
 
 [Release Notes](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Release-Notes)
