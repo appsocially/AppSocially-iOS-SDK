@@ -3,7 +3,7 @@
 Optimized User Acquisition funnel for iOS
 
 ## Overview
-AppSocially provides app builders with an in-house "Growth" team. The tools we've created mirror the best user-acquisition practices from companies like AirBnB, Facebook and Uber.
+AppSocially provides app builders with an in-house "Growth" team. These tools mirror the best user-acquisition practices from companies like AirBnB, Facebook and Uber.
 
 These companies devote huge resources to develop custom sharing experiences, custom landing pages, and custom tracking dashboards so they can test, track, and discover what works best for them. 
 
@@ -29,6 +29,8 @@ AppSocially comes in two parts:
 **A Server Side Backend and Dashboard:**  Which serves the landing pages, collects the statistics and presents you with a dashboard.
 
 First you should create an account at [http://appsocial.ly](http://appsocial.ly) and grab your API Key. 
+
+Then:
 
 ###Download and install with CocoaPods
 
