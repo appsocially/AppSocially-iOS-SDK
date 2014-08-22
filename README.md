@@ -1,8 +1,34 @@
 #AppSocially SDK
 
-Integrate user-acquisition functions into your app.
+Optimized User Acquisition funnel for iOS
 
-##Downloads
+## Overview
+AppSocially provides app builders with an in-house "Growth" team. The tools we've created mirror the best user-acquisition practices from companies like AirBnB, Facebook and Uber.
+
+These companies devote huge resources to develop custom sharing experiences, custom landing pages, and custom tracking dashboards so they can test, track, and discover what works best for them. 
+
+With AppSocially, you too can benefit from the bulk of their learnings. Simply install and configure the SDK and your user acquisition funnel will blow up in no time.
+
+###AppSocially can be used to:
+ * Quickly create unified contact lists for use in sending invites
+ * Send 1 to 1 invites on Facebook, email, and sms
+ * Send 1 to many Shares on Facebook and Twitter
+ * Create custom landing pages for each individual invite or share
+	 * embed custom relevant content in each landing page
+	 * A/B test landing pages
+	 * View each individual landing page's performance, or chart performance in aggregate
+ * Track invites through all the way to installs
+ * Create referral codes and reward users and their friends for inviting and joining respectively. [COMING SOON]
+
+
+##Installation
+AppSocially comes in two parts:
+
+**A client side SDK:** Provides Interface and  the user invites their friends.
+
+**A Server Side Backend and Dashboard:**  Which serves the landing pages, collects the statistics and presents you with a dashboard.
+
+First you should create an account at [http://appsocial.ly](http://appsocial.ly) and grab your API Key. 
 
 ###Download and install with CocoaPods
 
@@ -67,194 +93,4 @@ The documentation can be found at the [wiki](https://github.com/appsocially/AppS
 - iOS 5.0+
 - To use Facebook or Twitter related functions, iOS 6.0 or later is needed.
 
-##Release Note
-
-###0.8.6 (Apr. 28. 2014)
-
-- Fixed some bugs in ASFriendPickerController
-  - https://github.com/appsocially/AppSocially-iOS-SDK/issues/8
-  - https://github.com/appsocially/AppSocially-iOS-SDK/issues/7
-  - https://github.com/appsocially/AppSocially-iOS-SDK/issues/6
-
-
-###0.8.5 (Mar. 7. 2014)
-
-- Fixed some bugs
-
-
-###0.8.4 (Jan. 23. 2014)
-
-- Fixed a bug for [Twitter API's restriction](https://dev.twitter.com/discussions/24239)
-- New localizations
-  - ko
-  - zh-Hans
-
-
-###0.8.3 (Dec. 12, 2013)
-
-- Supported arm64 and x86_64 architectures.
-- Fixed a bug related twitter share in iOS7.
-- Fixed a bug for Trackable UIActivity.
-- Fixed some minor bugs.
-
-
-###0.8.2 (Nov. 30, 2013)
-
-- Fixed minor bugs.
-
-###0.8.1 (Oct. 4, 2013)
-
-- Supported iOS7 in the Mail Compose View.
-- Fixed the Trackable Activity sample.
-
-
-###0.8.0 (Oct. 4, 2013)
-
-####What's new
-
-- Supported iOS7 in the SMS Compose View.
-- Enabled `shareInfo` properties and arguments in share related functions
-  - See also "API differences" of ASSharer.
-- Added APIs to create Landing Pages.
-  - See also "API differences" of ASSharer and ASInviter.
-- Added a sample function into ShareSample project.
-  - This indicates how create a landing page and share with FacebookSDK's share dialog.
-
-####API differences
-
-- ASSharer:
-
-  - `shareInfoWithMessage:contentUrl:` (Added)
-  - `setShareItems:forShareType:` (Removed. Use `setStringToShare:urlToShare:imageToShare:forShareType:` instead.)
-  - `setStringToShare:urlToShare:imageToShare:forShareType:` (Added)
-  - `shareWithType:shareItems:completion:` (Removed. Use `shareWithType:shareInfo:urlToShare:imageToShare:completion:` instead.)
-  - `shareWithType:shareItems:contentUrl:completion:` (Removed. Use `shareWithType:shareInfo:urlToShare:imageToShare:completion:` instead.)
-  - `shareWithType:shareInfo:urlToShare:imageToShare:completion:` (Added)
-  - `createPageFrom:to:shareInfo:via:completionHandler:` (Added)
-
-
-- ASShareComposeViewControllre
-  - `imageAsThumbnail` (Added)
-  - `contentUrl` (Removed. Set into `shareInfo` instead with kDataPropertyContentURL key.)
-  - `shareInfo` (Added)
-
-- ASInviter:
-  - `createPageFrom:to:inviteInfo:via:completionHandler:` (Added)
-  - `createPagesFrom:to:inviteInfo:via:completionHandler:` (Added)
-  
-- ASConstants.h
-  - `kDataPropertyMessage` (Added)
-  - `kDataPropertyContentURL` (Added)
-
-
-- Class name changes
-  - ASTrackableFacebookActivity -> ASFacebookActivity
-  - ASTrackableTwitterActivity -> ASTwitterActivity
-  - ASTrackableMailActivity -> ASMailActivity
-  - ASTrackableSMSActivity -> ASSMSActivity
-
-  Each class is now the subclass of ASActivity, and it can be set `shareInfo`.
-
-
-
-###0.7.3 (Sep. 19, 2013)
-
-- Bug fixes for iOS7
-
-###0.7.2 (Sep. 12, 2013)
-
-- iOS7 suport
-- Bug fixes
-
-###0.7.1 (Sep. 2, 2013)
-
-- Fixed a bug for the invite function via Email.
-- Updated README
-
-###0.7.0 (Aug. 27, 2013)
-
-- New functions
-  - Invite via LINE
-
-- Updated sample projects
-  - **Default AppSocially API Key and Facebook App ID**
-
-- Renamed file names
-  - **Growth.frameworks -> AppSocially.framework**
-  - **Growth.bundle -> AppSocially.bundle**
-  - GrowthSDK.strings -> AppSociallySDK.strings
-
-- Renamed class names
-  - **Growth -> AppSocially**
-  - **GRXxxx -> ASXxxx**
-
-- Moved `showInviteSheetInView:` method to ASInviter
-
-````
-[ASInviter showInviteSheetInView:self.view];
-````
-
-- Moved `setSenderAccount:` method to ASInviter
-
-````
-[ASInviter setSenderAccount:account type:ASInviteTypeTwitterDM];
-````
-
-- Changed share related methods
-
-````
-[ASSharer shareWithType:ASShareTypeTwitter
-             shareItems:shareItems
-             contentUrl:contentUrl
-             completion:nil];
-````
-
-- Removed `shareWithSenderName:contentURL:presetMessage:completion:` method from GRMailSharer
-
-
-**See also [AppSocially SDK 0.7.0 Transition Guide](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Transition-Guide-from-0.6.0-or-earlier-to-0.7.0)**
-
-
-###0.6.0 (Aug. 14, 2013)
-
-- New functions
-  - **Bulk Invitation**
-  - Twitter support in GRFriendsPickerController.
-  - Aggregated Share ViewController (See "Examples/03_ShareSample")
-  - iOS 5.x compatibility (CANNOT use Facebook / Twitter related functions on iOS 5.x)
-
-- Updated sample projects.
-
-
-###0.5.0 (Jul. 18, 2013)
-
-- Reduced dependent Frameworks.
-  - Dependencies for CoreData.framework, CoreLocation.framework, libsqlite3.dylib were reduced.
-
-- Reduced binary size.
-- Added localization files for Spanish & Portuguese.
-  - Localize/es.lproj/GrowthSDK.strings
-  - Localize/pt.lproj/GrowthSDK.strings
-
-
-###0.4.0 (Jul. 12, 2013)
-
-- New functions:
-  - Aggregated friend picker (  See "Examples/05_AggregatedPickerSample")
-  - Share via Facebook, Twitter (See "Examples/03_ShareSample")
-  - Customization and Localization of texts (See "Localize")
-- Shortend some APIs.
-
-(Older version)
-
-````
-[[Growth sharedInstance] showInviteSheetInView:self.view];
-````
-
-(New version)
-
-````
-[Growth showInviteSheetInView:self.view];
-````
-
-- Fixed some bugs.
+[Release Notes](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Release-Notes)
