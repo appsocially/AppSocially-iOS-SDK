@@ -54,6 +54,7 @@ https://github.com/appsocially/AppSocially-iOS-SDK/releases
 
 ##First Guides
 
+- [Create Unique Landing Pages and Share with Facebook on AppSocially!] (https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Create-Unique-Landing-Pages-and-Share-with-Facebook-SDK-Share-Dialog)
 - [How to install the SDK into your project](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/How-to-install-the-SDK-into-your-project)
 - [1 line implement of invite functions](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/1-line-implement-of-invite-functions)
 
