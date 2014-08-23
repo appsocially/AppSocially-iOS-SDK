@@ -1,6 +1,6 @@
 #AppSocially SDK
 
-Optimized User Acquisition funnel for iOS + Dashboard
+Optimized User Acquisition funnel for iOS + Growth Dashboard
 
 ## Overview
 AppSocially provides app builders with an in-house "Growth" team. These tools mirror the best user-acquisition practices from companies like AirBnB, Facebook and Uber.
