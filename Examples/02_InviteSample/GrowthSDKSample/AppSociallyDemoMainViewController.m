@@ -13,15 +13,15 @@
 
 
 #define kPresetMessage @"Check my photo from {APP_NAME}!"
-#define kSpecialColor [UIColor colorWithRed: 9.0/255.0 green:187./255.0 blue: 198./255.0 alpha:1.0]
+#define kSpecialColor [UIColor colorWithRed: 241/255.0 green:110/255.0 blue: 110/255.0 alpha:1.0]
 
 
 @interface AppSociallyDemoMainViewController ()
 <ASFriendPickerViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (nonatomic, strong) NSArray *pickedFriends;
 @property (nonatomic, weak) IBOutlet UISwitch *addressbookSwitch;
-@property (nonatomic, weak) IBOutlet UISwitch *facebookSwitch;
-@property (nonatomic, weak) IBOutlet UISwitch *twitterSwitch;
+//@property (nonatomic, weak) IBOutlet UISwitch *facebookSwitch;
+//@property (nonatomic, weak) IBOutlet UISwitch *twitterSwitch;
 @property (nonatomic, weak) IBOutlet UISwitch *tabSwitch;
 @property (nonatomic, weak) IBOutlet UISwitch *bulkSwitch;
 @property (nonatomic, weak) IBOutlet UIButton *showPickerBtn;
@@ -41,8 +41,8 @@
     self.showPickerBtn.layer.masksToBounds = YES;
     
     self.addressbookSwitch.onTintColor = kSpecialColor;
-    self.facebookSwitch.onTintColor = kSpecialColor;
-    self.twitterSwitch.onTintColor = kSpecialColor;
+//    self.facebookSwitch.onTintColor = kSpecialColor;
+//    self.twitterSwitch.onTintColor = kSpecialColor;
     self.bulkSwitch.onTintColor = kSpecialColor;
     self.tabSwitch.onTintColor = kSpecialColor;
 }
@@ -218,8 +218,8 @@
     pickerCtr.selectedBackgroundView = selectionView;
 
     pickerCtr.addressBookDisabled = !self.addressbookSwitch.isOn;
-    pickerCtr.facebookDisabled    = !self.facebookSwitch.isOn;
-    pickerCtr.twitterDisabled     = !self.twitterSwitch.isOn;
+    pickerCtr.facebookDisabled    = YES;
+    pickerCtr.twitterDisabled     = YES;
     
     pickerCtr.multiSelectEnabled = self.bulkSwitch.isOn;
     pickerCtr.tabDisabled        = !self.tabSwitch.isOn;

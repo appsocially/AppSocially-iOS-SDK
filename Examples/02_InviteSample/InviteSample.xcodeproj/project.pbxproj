@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28AD77CE19BEE93000ECD68D /* AppSocially.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AD77CD19BEE93000ECD68D /* AppSocially.framework */; };
+		28AD77D019BEE93600ECD68D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AD77CF19BEE93600ECD68D /* FacebookSDK.framework */; };
 		85B445C117288AA400D584DA /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B445C017288AA400D584DA /* libxml2.dylib */; };
 		85B445C317288ADF00D584DA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B445C217288ADF00D584DA /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		85B445C717288CB800D584DA /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B445C617288CB800D584DA /* libresolv.dylib */; };
@@ -34,7 +36,6 @@
 		8A8FCBA117988BC3000FDE7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8FCBA017988BC3000FDE7A /* UIKit.framework */; };
 		8AC2C8A517CD541B005588BC /* AppSociallySDK.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8AC2C8A317CD541B005588BC /* AppSociallySDK.strings */; };
 		8AC2C8A917CD5437005588BC /* AppSocially.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8AC2C8A817CD5437005588BC /* AppSocially.bundle */; };
-		8AC2C8AB17CD544C005588BC /* AppSocially.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC2C8AA17CD544C005588BC /* AppSocially.framework */; };
 		8AC6D6181741833E00820179 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC6D6171741833E00820179 /* MessageUI.framework */; };
 		8AC6D61B1741835000820179 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC6D6191741835000820179 /* AddressBook.framework */; };
 		8AC6D61C1741835000820179 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC6D61A1741835000820179 /* AddressBookUI.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28AD77CD19BEE93000ECD68D /* AppSocially.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppSocially.framework; sourceTree = "<group>"; };
+		28AD77CF19BEE93600ECD68D /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		85B4415F17288A2800D584DA /* GrowthCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowthCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B445C017288AA400D584DA /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
 		85B445C217288ADF00D584DA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
@@ -77,7 +80,6 @@
 		8AC2C8A617CD5424005588BC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/AppSociallySDK.strings; sourceTree = "<group>"; };
 		8AC2C8A717CD5426005588BC /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/AppSociallySDK.strings; sourceTree = "<group>"; };
 		8AC2C8A817CD5437005588BC /* AppSocially.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AppSocially.bundle; path = ../../../AppSociallySDK/AppSocially.bundle; sourceTree = "<group>"; };
-		8AC2C8AA17CD544C005588BC /* AppSocially.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppSocially.framework; path = ../../AppSociallySDK/AppSocially.framework; sourceTree = "<group>"; };
 		8AC6D6171741833E00820179 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
 		8AC6D6191741835000820179 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
 		8AC6D61A1741835000820179 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AddressBookUI.framework; sourceTree = DEVELOPER_DIR; };
@@ -91,12 +93,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AC2C8AB17CD544C005588BC /* AppSocially.framework in Frameworks */,
 				8A8FCBA117988BC3000FDE7A /* UIKit.framework in Frameworks */,
 				8A8FCB9F17988BB5000FDE7A /* Foundation.framework in Frameworks */,
 				8A8FCB9D17988B99000FDE7A /* CoreGraphics.framework in Frameworks */,
 				8A7FF708177A0F6E00F6E5A2 /* libiconv.dylib in Frameworks */,
 				8AC6D61B1741835000820179 /* AddressBook.framework in Frameworks */,
+				28AD77D019BEE93600ECD68D /* FacebookSDK.framework in Frameworks */,
 				8AC6D61C1741835000820179 /* AddressBookUI.framework in Frameworks */,
 				8AC6D6181741833E00820179 /* MessageUI.framework in Frameworks */,
 				85B447A91728B61700D584DA /* Accounts.framework in Frameworks */,
@@ -107,6 +109,7 @@
 				85B447AB1728B62800D584DA /* Social.framework in Frameworks */,
 				85B445D217288F0900D584DA /* SystemConfiguration.framework in Frameworks */,
 				85B445C717288CB800D584DA /* libresolv.dylib in Frameworks */,
+				28AD77CE19BEE93000ECD68D /* AppSocially.framework in Frameworks */,
 				85B445C117288AA400D584DA /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +140,8 @@
 		85B4416117288A2800D584DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8AC2C8AA17CD544C005588BC /* AppSocially.framework */,
+				28AD77CF19BEE93600ECD68D /* FacebookSDK.framework */,
+				28AD77CD19BEE93000ECD68D /* AppSocially.framework */,
 				8A8FCBA017988BC3000FDE7A /* UIKit.framework */,
 				8A8FCB9E17988BB5000FDE7A /* Foundation.framework */,
 				8A8FCB9C17988B99000FDE7A /* CoreGraphics.framework */,
@@ -380,8 +384,9 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/../../AppSociallySDK\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -430,8 +435,9 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/../../AppSociallySDK\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -485,8 +491,9 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/../../AppSociallySDK\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

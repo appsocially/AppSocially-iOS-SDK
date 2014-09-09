@@ -16,12 +16,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 #warning Replace with YOUR APP's AppSociallyAPIKey and FacebookAppID
-    [AppSocially setAPIKey:@"c30614800cc00acad4765bf6f72efef6"];
-    [AppSocially setFacebookAppID:@"117100645022644"];
+    [AppSocially setAPIKey:@"1c826bf024bc7fb4ab94c7c8249b82dc"];
     
 
     // appearance
-    UIColor *baseColor = [UIColor colorWithRed:9.0/255.0 green:187./255.0 blue:198./255.0 alpha:1.0];
+    UIColor *baseColor = [UIColor colorWithRed:241/255.0 green:110/255.0 blue:110/255.0 alpha:1.0];
     
     NSDictionary *attributes = @{UITextAttributeTextColor:[UIColor whiteColor],
                                  UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 0.0f)],

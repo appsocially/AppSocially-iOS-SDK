@@ -17,12 +17,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 #warning Replace with YOUR APP's AppSociallyAPIKey and FacebookAppID
-    [AppSocially setAPIKey:@"38abee1be738a828fecc1a56a79d4592"];
-    [AppSocially setFacebookAppID:@"117100645022644"];
+    [AppSocially setAPIKey:@"1c826bf024bc7fb4ab94c7c8249b82dc"];
     
 
     // appearance
-    UIColor *barTextColor = [UIColor colorWithRed:0. green:150./255. blue:187./255. alpha:1.0];
+    UIColor *barTextColor = [UIColor colorWithRed:241. green:110./255. blue:110./255. alpha:1.0];
     NSDictionary *attributes = @{UITextAttributeTextColor: barTextColor,
                                  UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 0.0f)],
                                  UITextAttributeFont: [UIFont fontWithName:@"Futura-Medium" size:20.0f]};

@@ -15,8 +15,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 #warning Replace with YOUR APP's AppSociallyAPIKey and FacebookAppID
-    [AppSocially setAPIKey:@"38abee1be738a828fecc1a56a79d4592"];
-    [AppSocially setFacebookAppID:@"117100645022644"];
+    [AppSocially setAPIKey:@"1c826bf024bc7fb4ab94c7c8249b82dc"];
     
 
     // appearance
