@@ -22,9 +22,9 @@
 {
     [super viewDidLoad];
 
-    self.tableView.backgroundColor = [UIColor colorWithRed:0.0
-                                                     green:208.0/255.0
-                                                      blue:218.0/255.0
+    self.tableView.backgroundColor = [UIColor colorWithRed:241.0
+                                                     green:110.0/255.0
+                                                      blue:110.0/255.0
                                                      alpha:1.0];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
@@ -81,18 +81,14 @@
             cell.iconImageView.image = nil;
             break;
         case 1:
-            cell.nameLabel.text = @"Twitter";
-            cell.iconImageView.image = [UIImage imageNamed:@"icon_twitter"];
-            break;
-        case 2:
             cell.nameLabel.text = @"Facebook";
             cell.iconImageView.image = [UIImage imageNamed:@"icon_facebook"];
             break;
-        case 3:
+        case 2:
             cell.nameLabel.text = @"Email";
             cell.iconImageView.image = [UIImage imageNamed:@"icon_mail"];
             break;
-        case 4:
+        case 3:
             cell.nameLabel.text = @"Text";
             cell.iconImageView.image = [UIImage imageNamed:@"icon_contact"];
             break;
@@ -113,20 +109,14 @@
             // title
             break;
         case 1:
-            // Twitter
-            [ASInviter inviteVia:ASInviteTypeTwitterDM
-                      inviteInfo:inviteInfo
-                      completion:nil];
-            break;
-        case 2:
             // Facebook
             [ASInviter inviteVia:ASInviteTypeFacebookMessage inviteInfo:nil completion:nil];
             break;
-        case 3:
+        case 2:
             // Mail
             [ASInviter inviteVia:ASInviteTypeMail inviteInfo:nil completion:nil];
             break;
-        case 4:
+        case 3:
             // SMS
             [ASInviter inviteVia:ASInviteTypeSMS inviteInfo:nil completion:nil];
             break;

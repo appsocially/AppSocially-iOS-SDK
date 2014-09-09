@@ -18,9 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 #warning Replace with YOUR APP's AppSociallyAPIKey and FacebookAppID
-    [AppSocially setAPIKey:@"38abee1be738a828fecc1a56a79d4592"];
-    [AppSocially setFacebookAppID:@"117100645022644"];
-
+    [AppSocially setAPIKey:@"1c826bf024bc7fb4ab94c7c8249b82dc"];
+ 
     
     // slide menu setup
     AppSociallyDemoMainViewController *mainCtr = [[AppSociallyDemoMainViewController alloc] init];
@@ -38,16 +37,16 @@
                                  UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 0.0f)],
                                  UITextAttributeFont: [UIFont fontWithName:@"Futura-CondensedExtraBold" size:20.0f]};
     
-    UIImage *barColorImage = [UIImage imageNamed:@"BarColor2.png"];
+    UIImage *barColorImage = [UIImage imageNamed:@"BarColor3.png"];
     [[UINavigationBar appearance] setBackgroundImage:barColorImage
                                        forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setTitleTextAttributes:attributes];
     
     NSString *version = [[UIDevice currentDevice] systemVersion];
     if (version.floatValue < 7.0) {
-        [[UIBarButtonItem appearance] setTintColor:[UIColor colorWithRed:0.
-                                                                   green:209.0/255.0
-                                                                    blue:218.0/255.0
+        [[UIBarButtonItem appearance] setTintColor:[UIColor colorWithRed:241.
+                                                                   green:110.0/255.0
+                                                                    blue:110.0/255.0
                                                                    alpha:1.0]];
     }
     
