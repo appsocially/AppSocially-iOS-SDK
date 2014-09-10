@@ -11,15 +11,15 @@ With AppSocially, you too can benefit from the bulk of their learnings. Simply i
 
 ### AppSocially can help you to:
 
-Quickly create unified contact lists for use in sending invites
-Send 1-to-1 invites on Facebook, email, and sms
-Send 1-to-many shares on Facebook and Twitter
-Generate custom landing pages for each individual invite or share
-Embed custom relevant content in each landing page
-A/B test landing pages
-View each individual landing page's performance, or chart invite/share/landing page performance in aggregate
-Track your entire funnel, from invite, to install, to conversion, and back to invite.
-Create referral codes and reward users and their friends for inviting and joining respectively. [COMING SOON]
+* Quickly create unified contact lists for use in sending invites
+* Send 1-to-1 invites on Facebook, email, and sms
+* Send 1-to-many shares on Facebook and Twitter
+* Generate custom landing pages for each individual invite or share
+* Embed custom relevant content in each landing page
+* A/B test landing pages
+* View each individual landing page's performance, or chart invite/share/ landing page performance in aggregate
+* Track your entire funnel, from invite, to install, to conversion, and back to invite.
+* Create referral codes and reward users and their friends for inviting and joining respectively. [COMING SOON]
 
 ### Send 1-to-1 invites on Facebook, email, and sms
 Our customizable UI Views can be installed with just one line of code
