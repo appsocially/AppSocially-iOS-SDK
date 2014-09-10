@@ -27,20 +27,20 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb117100645022644</string>
+				<string>fb660704754000366</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>FacebookAppID</key>
-	<string>117100645022644</string>
+	<string>660704754000366</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
 	<key>FacebookDisplayName</key>
-	<string>testapp</string>
+	<string>Appsocially SDK Sample</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

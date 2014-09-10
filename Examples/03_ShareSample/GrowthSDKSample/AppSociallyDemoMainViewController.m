@@ -14,7 +14,7 @@
 #import "SVProgressHUD.h"
 
 
-#define kBtnColor [UIColor colorWithRed:0. green:150./255. blue:187./255. alpha:1.]
+#define kBtnColor [UIColor colorWithRed:241. green:110./255. blue:110./255. alpha:1.]
 #define kPresetMessage @"This is preset message."
 #define kFilenameToShare @"dog.jpg"
 #define kImageURL @"https://sphotos-b-pao.xx.fbcdn.net/hphotos-ash4/1004691_1405060609714824_1759329629_n.jpg"
