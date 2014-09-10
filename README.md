@@ -7,8 +7,7 @@
 [Tutorials](#Tutorials)  
 [Requirement / Compatibility](#Requirement / Compatibility)  
 [Release Notes](#Release Notes)  
-    [0.9.0 (Sep. 10, 2014)](#Release Notes 0.9.0)  
-
+-[0.9.0 (Sep. 10, 2014)](#Release Notes 0.9.0)  
 [FAQ](#FAQ)
 
 ##<a name ="Introduction">Introduction</a>
