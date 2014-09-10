@@ -1,6 +1,15 @@
 # AppSocially SDK
 
-## Introduction
+## Index
+
+[Introduction](#Introduction)
+[Intsrallation](#Intsrallation)
+[Tutorials](#Tutorials)
+[Requirement / Compatibility](#Requirement / Compatibility)
+[Release Notes](#Release Notes)
+[FAQ](#FAQ)
+
+<a name ="Introduction">## Introduction</a>
 
 ### Overview
 
@@ -35,7 +44,7 @@ We can deliver these lists as optimized UI Views in iOS or Android, or through o
 
 Comming Soon!
 
-## Intsrallation
+<a name ="Intsrallation">## Intsrallation</a>
 AppSocially comes in two parts:
 
 **A client side SDK:** Provides Interface and  the user invites their friends.
@@ -123,7 +132,7 @@ Initialize AppSociallySDK in `UIApplicationDelegate` class.
 } 
 ````
 
-## Tutorials
+<a name ="Tutorials">## Tutorials</a>
 
 ### 1. Private Invite
 
@@ -144,7 +153,7 @@ Initialize AppSociallySDK in `UIApplicationDelegate` class.
 #####ActionSheet type
 You can display invite function in Actionsheete 
 
-(Image)
+
 
 Import Appsocially SDK in your class
 
@@ -470,7 +479,7 @@ Returns URL of the generated landing page.
 * `{{url}}` // "http://iloveapp.co/Enbzb04d"
 
 
-## Requirement / Compatibility
+<a name ="Requirement / Compatibility">## Requirement / Compatibility</a>
 * iOS 5.0+
 * To use Facebook or Twitter related functions, iOS 6.0 or later is needed.
 * For apps created after April 30, 2014, Facebook's direct invites are no longer available.
@@ -486,7 +495,7 @@ Returns URL of the generated landing page.
 [more...](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Release-Notes)
 
 
-## FAQ
+<a name ="FAQ">## FAQ</a>
 ###Invite API
 
 ####Q: Is it possible to add a picture (from the device) to the inviation?  We would really like to be able to show a visual with the invitation text in the invitee's Facebook Wall.
