@@ -125,7 +125,7 @@ Initialize AppSociallySDK in `UIApplicationDelegate` class.
 
 ## Tutorials
 
-### Private Invite
+### 1. Private Invite
 
 ####What your users can do
 * Invite friends via Facebook Message (with Message Dialog)
@@ -245,7 +245,7 @@ Call a method anywhere in your class
 ````
 
 
-### Share on Timeline
+### 2. Share on Timeline
 ####What your users can do
 * Share on Facebook timeline 
 * Share on Twitter timeline
@@ -341,7 +341,7 @@ Call a method anywhere in your class
 [Create Unique Landing Pages and Share with Facebook SDK Share Dialog](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Create-Unique-Landing-Pages-and-Share-with-Facebook-SDK-Share-Dialog)
 
 
-### Localization
+### 3. Localization
 
 You can change the messages by editing the localization file "AppSociallySDK.strings".
 
