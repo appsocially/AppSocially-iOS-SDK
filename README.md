@@ -48,7 +48,7 @@ Then:
 
 ###1. Download and Install AppSocially.framework
 
-###Install with CocoaPods
+####Install with CocoaPods
 
 Add Podfile.
 
@@ -62,7 +62,7 @@ And
 $ pod install
 ````
 
-###Install by adding files to project
+####Install by adding files to project
 1. Download from GitHub
 [https://github.com/appsocially/AppSocially-iOS-SDK/releases](https://github.com/appsocially/AppSocially-iOS-SDK/releases)
 2. In the menubar, click on 'File' then 'Add files to "Project"...'
