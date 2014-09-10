@@ -151,7 +151,7 @@ Initialize AppSociallySDK in `UIApplicationDelegate` class.
 #####ActionSheet type
 You can display invite function in Actionsheete 
 
-
+![Sample1](http://appsocially-docs-resources.s3.amazonaws.com/ss_FirstSample__.png)
 
 Import Appsocially SDK in your class
 
