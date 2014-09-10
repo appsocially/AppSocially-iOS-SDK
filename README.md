@@ -347,9 +347,127 @@ You can change the messages by editing the localization file "AppSociallySDK.str
 
 [https://github.com/appsocially/AppSocially-iOS-SDK/tree/master/Localize](https://github.com/appsocially/AppSocially-iOS-SDK/tree/master/Localize)
 
-### [Display customized data on landing pages](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Display-customized-data-on-landing-pages)
+### 4. Display customized data on landing You are able to set customized data as properties of "data" object on landing pages.
 
-### [Variables for Page Templates](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Templates-Variables)
+(eg) "data.video_url."
+
+**The property names are left to developers.**
+
+####How to send the property values from the app
+
+You can send the properties from the app as follows:
+
+#####When using ASInvitor
+
+Set the properties to the argument "inviteInfo" as an object of NSDictionary.
+
+(Sample1)
+````
+NSDictionary *inviteInfo = @{@"video_url": urlStr,
+                             @"message": msgStr};
+[ASInviter inviteVia:ASInviteTypeTwitterDM
+          inviteInfo:inviteInfo
+          completion:nil];
+````
+
+(Sample2)
+````
+NSDictionary *inviteInfo = @{@"video_url": urlStr,
+                             @"message": msgStr};
+[ASInviter inviteFriends:self.pickedFriends
+              inviteInfo:inviteInfo
+        onViewController:self
+         withMessageForm:NO
+              completion:nil];
+````
+
+#####When using ASSharer **(In Progress)**
+
+Set the properties to the argument "shareInfo" as an object of NSDictionary.
+
+````
+// Not supported in current version.
+````
+
+
+### 5. Variables for Page Templates
+Use template variables to customize and personalize your landing page!
+
+#### Objects
+Here is the list of Objects of Template Variables.
+
+* app :: Showing the app's details
+* sender :: Showing sender's details
+* receiver :: Showing receiver's details
+* message :: Returns the message added by the the sender for referral
+* data :: Showing the data sent from the app by the app's user
+* url :: Returns URL of the generated landing page
+
+#### app
+Showing the app's details
+
+**app.name** :: Returns the name of the app
+
+* `{{app.name}}` // "Your App Name"
+
+**app.icon** :: Returns URL of the app's icon image file
+
+* `{{app.icon}}` // "https://appsocial.ly/img/your_app_icon_image_url.png"
+
+**app.app_store_url** :: Returns URL of the app's direct link on AppStore
+
+* `{{app.app_store_url}}` // "https://itunes.apple.com/app/your_app_id"
+
+**app.website_url** :: Returns URL of the app's website
+
+* `{{app.website_url}}` // "http://yourappswebsite.com"
+
+#### sender
+Showing sender's details
+
+**sender.name** :: Returns sender's name
+
+* `{{sender.name}}` // "Yusuke Takahashi"
+
+**sender.profile_image_url** :: Returns URL of sender's profile image 
+
+* `{{sender.profile_image_url}}` // "http://appsocial.ly/images/yusuke_takahashi.png"
+
+**sender.account_url** :: Returns URL of sender's profile page
+
+* `{{sender.account_url}}` // "https://twitter.com/shu223"
+
+#### receiver
+Showing receiver's details
+
+**receiver.name** :: Returns receiver's name
+
+* `{{receiver.name}}` // "Dave McClure"
+
+**receiver.profile_image_url** :: Returns URL of receiver's profile image 
+
+* `{{receiver.profile_image_url}}` // "http://appsocial.ly/images/dave_mcclure.png"
+
+**receiver.account_url** :: Returns URL of receiver's profile page
+
+* `{{receiver.account_url}}` // "https://twitter.com/shu223"
+
+#### message
+Returns the message added by the the sender for referral.
+
+* `{{message}}` // "Hey, this app is awesome and I am sure you will love this!"
+
+#### data
+Showing the data sent from the app by the app's user
+
+**data.{PROPERTY_NAME}** :: Returns data which are sent from the app
+
+* `{{data.video_url}}` // "http://yourappswebsite.com/videos/video.mp4"
+
+#### url
+Returns URL of the generated landing page.
+
+* `{{url}}` // "http://iloveapp.co/Enbzb04d"
 
 
 ## Requirement / Compatibility
