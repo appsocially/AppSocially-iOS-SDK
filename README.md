@@ -485,7 +485,7 @@ Returns URL of the generated landing page.
 * For apps created after April 30, 2014, Facebook's direct invites are no longer available.
 * Facebook iOS SDK
 
-## Release Notes
+##<a name ="Release Notes">## Release Notes</a>
 
 ### 0.9.0 (Sep. 10, 2014)
 * AppSocially SDK 0.9.0
