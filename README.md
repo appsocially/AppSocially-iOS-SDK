@@ -1,4 +1,5 @@
 # AppSocially SDK
+Optimized User Acquisition funnel for iOS + Growth Dashboard
 
 ## Index
 
@@ -231,7 +232,7 @@ Call inviteFriends method.
 #####Customize View type
 You can call invite function individually anywhere in your code.
 
-(Image)
+![sample4](http://appsocially-docs-resources.s3.amazonaws.com/ss_CustomizedViewSample__.png)
 
 Import Appsocially SDK in your class
 
@@ -267,7 +268,6 @@ Call a method anywhere in your class
 #####Trackable UIActivity type
 You can display invite function in UIActivity.
 
-(Image)
 
 Import Appsocially SDK in your class
 
@@ -300,7 +300,7 @@ activityCtr = [[UIActivityViewController alloc] initWithActivityItems:nil
 #####Aggregated share view type
 You can display aggregated share form like below.
 
-(Image)
+![sample3](http://appsocially-docs-resources.s3.amazonaws.com/ss_ShareSample__.png)
 
 Import Appsocially SDK in your class
 
@@ -323,7 +323,7 @@ shareCtr = [[ASShareComposeViewController alloc] init];
 #####Customize View type
 You can call invite function individually anywhere in your code.
 
-(Image)
+![sample4](http://appsocially-docs-resources.s3.amazonaws.com/ss_CustomizedViewSample__.png)
 
 Import Appsocially SDK in your class
 
