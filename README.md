@@ -487,9 +487,44 @@ Returns URL of the generated landing page.
 
 
 ## FAQ
-Coming soon!
+###Invite API
 
-## [References](https://github.com/appsocially/AppSocially-iOS-SDK/wiki)
+####Q: Is it possible to add a picture (from the device) to the inviation?  We would really like to be able to show a visual with the invitation text in the invitee's Facebook Wall.
+
+A: You can add pictures into the generated landing pages by passing `inviteInfo` as below:
+
+````
+NSDictionary *inviteInfo = @{kDataPropertyContentURL: [UIImage imageNamed:@"filename"]};
+
+[ASInviter inviteVia:ASInviteTypeFacebookMessage
+          inviteInfo:inviteInfo
+          completion:nil];
+````
+
+And add `{{content_url}}` into the place where you'd like to display in your page template from our dashboard.
+
+See also: [Display customized data on landing pages](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Display-customized-data-on-landing-pages)
+
+####Q: How can I make an ASFriend object for Twitter manually?
+A: You can use `initWithDetail:type:` and put the NSDictionary object which is retrieved from Twitter API (e.g. friends/ids.json) for the "detail" argument.
+
+````
+ASFriend *friend = [[ASFriend alloc] initWithDetail:dictionaryFromTwitterAPI
+                                               type:ASFriendTypeTwitter];
+````
+
+
+###Share API
+
+####Q: How can I change the default message in the SHARE composer?
+
+A: The share related functions in ASSharer have "shareInfo" properties or arguments. You can pass a string value for a kDataPropertyMessage key, and it become the default (preset) message in the share composer.
+
+````
+NSDictionary *shareInfo = @{kDataPropertyMessage: @"This is preset message"};
+````
+
+[ShareSample](https://github.com/appsocially/AppSocially-iOS-SDK/tree/master/Examples/03_ShareSample) is useful for the reference.
 
 
 
