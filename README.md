@@ -7,6 +7,8 @@
 [Tutorials](#Tutorials)  
 [Requirement / Compatibility](#Requirement / Compatibility)  
 [Release Notes](#Release Notes)  
+    [0.9.0 (Sep. 10, 2014)](#Release Notes 0.9.0)  
+
 [FAQ](#FAQ)
 
 ##<a name ="Introduction">Introduction</a>
@@ -39,10 +41,6 @@ Our customizable UI Views can be installed with just one line of code
 * SMS
 
 We can deliver these lists as optimized UI Views in iOS or Android, or through our API, so you can build your own view.
-
-### AppSocially SDK 0.9.0 Transition Gui
-
-Comming Soon!
 
 ##<a name ="Intsrallation">Intsrallation</a>
 AppSocially comes in two parts:
@@ -487,10 +485,10 @@ Returns URL of the generated landing page.
 
 ##<a name ="Release Notes">## Release Notes</a>
 
-### 0.9.0 (Sep. 10, 2014)
+### <a name ="Release Notes 0.9.0">0.9.0 (Sep. 10, 2014)</a>
 * AppSocially SDK 0.9.0
 * Follow Facebook API v2
-* iOS SDK source code is exposed
+* Facebook SDK is requwired
 
 [more...](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Release-Notes)
 
