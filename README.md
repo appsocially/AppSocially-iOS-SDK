@@ -485,9 +485,8 @@ Returns URL of the generated landing page.
 ##<a name ="Release Notes">## Release Notes</a>
 
 ### <a name ="Release Notes 0.9.0">0.9.0 (Sep. 10, 2014)</a>
-* AppSocially SDK 0.9.0
 * Follow Facebook API v2
-* Facebook SDK is requwired
+* Facebook SDK is required
 
 [more...](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Release-Notes)
 
