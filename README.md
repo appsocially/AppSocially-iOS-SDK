@@ -11,7 +11,7 @@ Optimized User Acquisition funnel for iOS + Growth Dashboard
 -[0.9.0 (Sep. 10, 2014)](#Release Notes 0.9.0)  
 [FAQ](#FAQ)
 
-##<a name ="Introduction">Introduction</a>
+## <a name ="Introduction">Introduction</a>
 
 ### Overview
 
@@ -42,7 +42,7 @@ Our customizable UI Views can be installed with just one line of code
 
 We can deliver these lists as optimized UI Views in iOS or Android, or through our API, so you can build your own view.
 
-##<a name ="Intsrallation">Intsrallation</a>
+## <a name ="Intsrallation">Intsrallation</a>
 AppSocially comes in two parts:
 
 **A client side SDK:** Provides Interface and  the user invites their friends.
@@ -53,9 +53,9 @@ First you should create an account at [http://appsocial.ly](http://appsocial.ly)
 
 Then:
 
-###1. Download and Install AppSocially.framework
+### 1. Download and Install AppSocially.framework
 
-####Install with CocoaPods
+#### Install with CocoaPods
 
 Add Podfile.
 
@@ -69,7 +69,7 @@ And
 $ pod install
 ````
 
-####Install by adding files to project
+#### Install by adding files to project
 1. Download from GitHub
 [https://github.com/appsocially/AppSocially-iOS-SDK/releases](https://github.com/appsocially/AppSocially-iOS-SDK/releases)
 2. In the menubar, click on 'File' then 'Add files to "Project"...'
@@ -77,16 +77,16 @@ $ pod install
 4. Make sure "Copy items into destination group's folder (if needed)" is * checked"
 5. Click "Add"
 
-###2. Setup your project
+### 2. Setup your project
 
-####1. Create a new app on the [Facebook App Dashboard](https://developers.facebook.com/apps).
+#### 1. Create a new app on the [Facebook App Dashboard](https://developers.facebook.com/apps).
 
 Make sure **Sandbox Mode is set to Disabled** and **Facebook Login is set to Enabled**.
 
 Detail : [Getting Started with the Facebook SDK for iOS - 4](http://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/)
 
 
-####2. Add required frameworks
+#### 2. Add required frameworks
 
 AppSociallySDK relies on the following frameworks.
 
@@ -105,12 +105,12 @@ AppSociallySDK relies on the following frameworks.
 - libiconv.dylib
 
 
-####3. Update Build Configurations
+#### 3. Update Build Configurations
 
 Set "Other Linker Flags" configiration to `-ObjC -all_load` of your iOS App Build Target > Build Settings tab.
 
 
-###3. Initialize AppSociallySDK
+### 3. Initialize AppSociallySDK
 
 Initialize AppSociallySDK in `UIApplicationDelegate` class.
 
@@ -130,25 +130,25 @@ Initialize AppSociallySDK in `UIApplicationDelegate` class.
 } 
 ````
 
-##<a name ="Tutorials">Tutorials</a>
+## <a name ="Tutorials">Tutorials</a>
 
 ### 1. Private Invite
 
-####What your users can do
+#### What your users can do
 * Invite friends via Facebook Message (with Message Dialog)
 * Invite friends via Text
 * Invite friends via Email
 * Invite friends via Line
 
-####What you can do
+#### What you can do
 * Have your users easily invite friends privately via Facebook, Email and Text
 * Keep track of your users’ referral metrics
 * (Option) Choose Redirect Link or Personalized Landing Page (Redirect Link by default)
 * (Option) A/B Test Personalized Landing Page
 
-####Invite API
+#### Invite API
 
-#####ActionSheet type
+##### ActionSheet type
 You can display invite function in Actionsheete 
 
 ![Sample1](http://appsocially-docs-resources.s3.amazonaws.com/ss_FirstSample__.png)
@@ -165,7 +165,7 @@ Call a method anywhere in your class
 [ASInviter showInviteSheetInView:self.view];
 ````
 
-#####Aggregated Friend Picker type
+##### Aggregated Friend Picker type
 You can display aggregated friend list like below. This function is only invite function via mail and address book.
 
 ![sample2](http://appsocially-docs-resources.s3.amazonaws.com/ss_InviteSmaple__.png)
@@ -218,7 +218,7 @@ To enable invitation via Twitter, you should **set an ACAccount object** as belo
 It's needed because of the multi-account support.
 
 
-######Invite friends picked from the Friend Picker
+###### Invite friends picked from the Friend Picker
 
 Call inviteFriends method.
 
@@ -229,7 +229,7 @@ Call inviteFriends method.
 ````
 
 
-#####Customize View type
+##### Customize View type
 You can call invite function individually anywhere in your code.
 
 ![sample4](http://appsocially-docs-resources.s3.amazonaws.com/ss_CustomizedViewSample__.png)
@@ -253,19 +253,19 @@ Call a method anywhere in your class
 
 
 ### 2. Share on Timeline
-####What your users can do
+#### What your users can do
 * Share on Facebook timeline 
 * Share on Twitter timeline
 
-####What you can do
+#### What you can do
 * Have your users easily share friends on Facebook, Twitter
 * Keep track of your users’ referral metrics
 * (Option) Choose Redirect Link or Personalized Landing Page (Redirect Link by default)
 * (Option) A/B Test Personalized Landing Page
 
-####Share API
+#### Share API
 
-#####Trackable UIActivity type
+##### Trackable UIActivity type
 You can display invite function in UIActivity.
 
 
@@ -297,7 +297,7 @@ activityCtr = [[UIActivityViewController alloc] initWithActivityItems:nil
 
 [ShareSample](https://github.com/appsocially/AppSocially-iOS-SDK/tree/master/Examples/03_ShareSample) will be useful for the reference.
 
-#####Aggregated share view type
+##### Aggregated share view type
 You can display aggregated share form like below.
 
 ![sample3](http://appsocially-docs-resources.s3.amazonaws.com/ss_ShareSample__.png)
@@ -320,7 +320,7 @@ shareCtr = [[ASShareComposeViewController alloc] init];
                  completion:nil];
 ````
 
-#####Customize View type
+##### Customize View type
 You can call invite function individually anywhere in your code.
 
 ![sample4](http://appsocially-docs-resources.s3.amazonaws.com/ss_CustomizedViewSample__.png)
@@ -359,11 +359,11 @@ You can change the messages by editing the localization file "AppSociallySDK.str
 
 **The property names are left to developers.**
 
-####How to send the property values from the app
+#### How to send the property values from the app
 
 You can send the properties from the app as follows:
 
-#####When using ASInvitor
+##### When using ASInvitor
 
 Set the properties to the argument "inviteInfo" as an object of NSDictionary.
 
@@ -387,7 +387,7 @@ NSDictionary *inviteInfo = @{@"video_url": urlStr,
               completion:nil];
 ````
 
-#####When using ASSharer **(In Progress)**
+##### When using ASSharer **(In Progress)**
 
 Set the properties to the argument "shareInfo" as an object of NSDictionary.
 
@@ -476,13 +476,13 @@ Returns URL of the generated landing page.
 * `{{url}}` // "http://iloveapp.co/Enbzb04d"
 
 
-##<a name ="Requirement / Compatibility">Requirement / Compatibility</a>
+## <a name ="Requirement / Compatibility">Requirement / Compatibility</a>
 * iOS 5.0+
 * To use Facebook or Twitter related functions, iOS 6.0 or later is needed.
 * For apps created after April 30, 2014, Facebook's direct invites are no longer available.
 * Facebook iOS SDK
 
-##<a name ="Release Notes">## Release Notes</a>
+## <a name ="Release Notes">## Release Notes</a>
 
 ### <a name ="Release Notes 0.9.0">0.9.0 (Sep. 10, 2014)</a>
 * Follow Facebook API v2
@@ -491,10 +491,10 @@ Returns URL of the generated landing page.
 [more...](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Release-Notes)
 
 
-##<a name ="FAQ">FAQ</a>
-###Invite API
+## <a name ="FAQ">FAQ</a>
+### Invite API
 
-####Q: Is it possible to add a picture (from the device) to the inviation?  We would really like to be able to show a visual with the invitation text in the invitee's Facebook Wall.
+#### Q: Is it possible to add a picture (from the device) to the inviation?  We would really like to be able to show a visual with the invitation text in the invitee's Facebook Wall.
 
 A: You can add pictures into the generated landing pages by passing `inviteInfo` as below:
 
@@ -510,7 +510,7 @@ And add `{{content_url}}` into the place where you'd like to display in your pag
 
 See also: [Display customized data on landing pages](https://github.com/appsocially/AppSocially-iOS-SDK/wiki/Display-customized-data-on-landing-pages)
 
-####Q: How can I make an ASFriend object for Twitter manually?
+#### Q: How can I make an ASFriend object for Twitter manually?
 A: You can use `initWithDetail:type:` and put the NSDictionary object which is retrieved from Twitter API (e.g. friends/ids.json) for the "detail" argument.
 
 ````
@@ -519,9 +519,9 @@ ASFriend *friend = [[ASFriend alloc] initWithDetail:dictionaryFromTwitterAPI
 ````
 
 
-###Share API
+### Share API
 
-####Q: How can I change the default message in the SHARE composer?
+#### Q: How can I change the default message in the SHARE composer?
 
 A: The share related functions in ASSharer have "shareInfo" properties or arguments. You can pass a string value for a kDataPropertyMessage key, and it become the default (preset) message in the share composer.
 
