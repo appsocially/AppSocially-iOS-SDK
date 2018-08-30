@@ -405,7 +405,7 @@ Here is the list of Objects of Template Variables.
 * app :: Showing the app's details
 * sender :: Showing sender's details
 * receiver :: Showing receiver's details
-* message :: Returns the message added by the the sender for referral
+* message :: Returns the message added by the sender for referral
 * data :: Showing the data sent from the app by the app's user
 * url :: Returns URL of the generated landing page
 
@@ -459,7 +459,7 @@ Showing receiver's details
 * `{{receiver.account_url}}` // "https://twitter.com/shu223"
 
 #### message
-Returns the message added by the the sender for referral.
+Returns the message added by the sender for referral.
 
 * `{{message}}` // "Hey, this app is awesome and I am sure you will love this!"
 
